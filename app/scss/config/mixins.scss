@@ -1,0 +1,29 @@
+@mixin bg-cover {
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+}
+
+@mixin main-text {
+  font-family: 'roboto';
+  font-weight: 400;
+  font-style: normal;
+  font-size: 16px;
+}
+
+@mixin title {
+  font-family: 'sansus';
+  font-weight: 600;
+  font-style: normal;
+  font-size: 63px;
+  margin-bottom: 70px;
+  margin-top: 70px;
+}
+
+@mixin subtitle {
+  font-family: 'sansus';
+  font-weight: 600;
+  font-style: normal;
+  font-size: 35px;
+  margin-bottom: 40px;
+}

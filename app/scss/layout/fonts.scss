@@ -1,0 +1,72 @@
+//Bold
+@font-face {
+  font-family: 'roboto';
+  src: url('../../fonts/roboto-bold-webfont.woff') format('woff'),
+       url('../../fonts/roboto-bold-webfont.woff2') format('woff2');
+  font-weight: 700;
+  font-style: normal;
+}
+//bold Italic
+@font-face {
+  font-family: 'roboto';
+  src: url('../../fonts/roboto-bolditalic-webfont.woff') format('woff'),
+       url('../../fonts/roboto-bolditalic-webfont.woff2') format('woff2');
+  font-weight: 700;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: 'sansus';
+  src: url('../../fonts/sansus-webissimo-regular-webfont.woff') format('woff'),
+       url('../../fonts/sansus-webissimo-regular-webfont.woff2') format('woff2');
+  font-weight: 600;
+  font-style: normal;
+}
+//medium
+@font-face {
+  font-family: 'roboto';
+  src: url('../../fonts/roboto-medium-webfont.woff') format('woff'),
+       url('../../fonts/roboto-medium-webfont.woff2') format('woff2');
+  font-weight: 500;
+  font-style: normal;
+}
+//medium italic
+@font-face {
+  font-family: 'roboto';
+  src: url('../../fonts/roboto-mediumitalic-webfont.woff') format('woff'),
+       url('../../fonts/roboto-mediumitalic-webfont.woff2') format('woff2');
+  font-weight: 500;
+  font-style: italic;
+}
+//regular
+@font-face {
+  font-family: 'roboto';
+  src: url('../../fonts/roboto-regular-webfont.woff') format('woff'),
+       url('../../fonts/roboto-regular-webfont.woff2') format('woff2');
+  font-weight: 400;
+  font-style: normal;
+}
+//Italic regular
+@font-face {
+  font-family: 'roboto';
+  src: url('../../fonts/roboto-italic-webfont.woff') format('woff'),
+       url('../../fonts/roboto-italic-webfont.woff2') format('woff2');
+  font-weight: 400;
+  font-style: italic;
+}
+//light 
+@font-face {
+  font-family: 'roboto';
+  src: url('../../fonts/roboto-light-webfont.woff') format('woff'),
+       url('../../fonts/roboto-light-webfont.woff2') format('woff2');
+  font-weight: 300;
+  font-style: normal;
+}
+//light Italic
+@font-face {
+  font-family: 'roboto';
+  src: url('../../fonts/roboto-lightitalic-webfont.woff') format('woff'),
+       url('../../fonts/roboto-lightitalic-webfont.woff2') format('woff2');
+  font-weight: 300;
+  font-style: italic;
+}
