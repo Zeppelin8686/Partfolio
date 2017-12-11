@@ -63,6 +63,15 @@
 	}
 }
 
+.github {
+	width: 26px;
+	height: 22px;
+	fill: #fff;
+	&:hover {
+		fill: $accent;
+	}
+}
+
 .svg-github_round-dims {
 	width: 50px;
 	height: 50px;
@@ -71,6 +80,7 @@
 .svg-hamburger-dims {
 	width: 40px;
 	height: 35px;
+	fill: #fff;
 }
 
 .svg-in-dims {
@@ -80,6 +90,15 @@
 	opacity: .7;
 	&:hover {
 		opacity: 1;
+	}
+}
+
+.linkedin {
+	width: 24px;
+	height: 23px;
+	fill: #fff;
+	&:hover {
+		fill: $accent;
 	}
 }
 
@@ -141,8 +160,9 @@
 }
 
 .svg-portfolio_header-dims {
-	width: 1175.495px;
-	height: 313.961px;
+	width: 1175px;
+	height: 314px;
+	fill: $accent;
 }
 
 .svg-skype-dims {
@@ -167,6 +187,15 @@
 	opacity: .7;
 	&:hover {
 		opacity: 1;
+	}
+}
+
+.vk {
+	width: 30px;
+	height: 17px;
+	fill: #fff;
+	&:hover {
+		fill: $accent;
 	}
 }
 

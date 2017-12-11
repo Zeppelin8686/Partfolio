@@ -97,6 +97,7 @@
   border-radius: 50%;
   background: #fff;
   position: relative;
+  transition: background .6s;;
 
   &:after {
     content: "";
@@ -138,12 +139,12 @@
 
 .login-form__radio-elem:checked {
   &+.login-form__radio-fake {
+    background: $accent;
     &:after {
       content: url('../../icons/check.svg');
       display: block;
       position: absolute;
       background-repeat: no-repeat;
-      fill: $accent;
       width: 11px;
       height: 9px;
       margin-left: -3px;

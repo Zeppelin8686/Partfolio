@@ -1,0 +1,20 @@
+.socials__absolute {
+  position: absolute;
+  top: 30px;
+  left: 30px;
+}
+
+.hamburger-menu {
+  position: absolute;
+  top: 30px;
+  right: 30px;
+}
+
+.header-bg {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  opacity: .17;
+  z-index: 1;
+} 
