@@ -4,7 +4,7 @@ Web-development advenced course at Loftschool.
 
 Student: Maxim Borovik.
 
-Commands to use
+Commands to use:
 
 npm i --- to install dependencies
 
