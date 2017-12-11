@@ -1,3 +1,5 @@
-Домашняя работа в Loftschool. 
+Site Partfilio
 
-Партфолио
+Web-development advenced course at Loftschool.
+
+Student: Maxim Borovik.
