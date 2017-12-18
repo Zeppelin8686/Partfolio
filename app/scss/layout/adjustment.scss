@@ -18,11 +18,12 @@
   display: flex;
   flex-direction: column;
   justify-content: center;
+  align-items: center;
   }
 
   .section {
     height: 100vh;
-    background-color: rgba(0, 0, 0, 0.31);
+    background-color: #f0e6d2;
     min-height: 650px;
   
     &_center {
@@ -32,14 +33,81 @@
     }
   }
   
-  .section-title {
-    font-family: 'sansus';
-    font-weight: regular;
-    font-size: 63px;
-    color: #fff;
-    margin-bottom: 70px;
-    margin-top: 70px;
-    line-height: .86;
+  .section__title {
+    display: flex;
+    align-items: center;
+    @include title;
+    text-align: center;
+    color: $titles;
+    text-transform: uppercase;
+
+    &:before, &:after {
+      content: '';
+      display: block;
+      height: 14px;
+      width: 40px;    
+    }
+  
+    &:before {
+      margin-right: 30px;
+      background: url('../../icons/circles_left-title.svg');
+    }
+  
+    &:after {
+      margin-left: 30px;
+      background: url('../../icons/circles_right-title.svg');
+    }
+
+    &-white {
+      color: #fff;
+
+      &:before {
+        background: url('../../icons/circles_left-title-white.svg');
+      }
+    
+      &:after {
+        background: url('../../icons/circles_right-title-white.svg');
+      }
+    }
+  }
+
+  .section__subtitle {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    @include subtitle;
+    text-align: center;
+    text-transform: uppercase;
+    color: $titles;
+  
+    &:before, &:after {
+      content: '';
+      display: block;
+      height: 10px;
+      width: 21px;    
+    }
+  
+    &:before {
+      margin-right: 5px;
+      background: url('../../icons/circles_left-subtitle.svg');
+    }
+  
+    &:after {
+      margin-left: 5px;
+      background: url('../../icons/circles_right-subtitle.svg');
+    }
+    
+    &-white {
+      color: #fff;
+
+      &:before {
+        background: url('../../icons/circles_left-subtitle-white.svg');
+      }
+    
+      &:after {
+        background: url('../../icons/circles_right-subtitle-white.svg');
+      }
+    }
   }
 
   .btn {

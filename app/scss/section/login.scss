@@ -1,4 +1,5 @@
 .login {
+  padding-top: 35px;
   display: flex;
   display: none;
   flex-direction: column;
@@ -6,32 +7,10 @@
   align-items: center;
   align-self: center;
   width: 380px;
-  height: 406px;
   background-color: rgba(215, 191, 155, .6);
   border-radius: 3px;
 }
 
-.subtitle {
-  margin-top: 35px;
-  display: flex;
-  align-items: center;
-  @include subtitle;
-  color: #fff;
-
-  &:before, &:after {
-    content: '';
-    display: block;
-    height: 10px;
-    width: 21px;    
-  }
-
-  &:before {
-    margin-right: 5px;
-    background: url('../../icons/circles_left.svg');
-  }
-
-  &:after {
-    margin-left: 5px;
-    background: url('../../icons/circles_right.svg');
-  }
+.callback {
+  background-color: rgba(#ddc9aa, .3);
 }

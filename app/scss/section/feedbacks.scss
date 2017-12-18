@@ -1,0 +1,7 @@
+.feedbacks {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  background-image: url('../../img/bg-works.png');
+  @include bg-cover;
+}

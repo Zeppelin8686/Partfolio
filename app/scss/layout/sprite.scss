@@ -4,23 +4,32 @@
 }
 
 .svg-about_bg_left-dims {
-	width: 900.006px;
-	height: 1013.986px;
+	fill:#f0efe9;
+	height: 100%;
+	width: 100%;
 }
 
 .svg-about_bg_right-dims {
-	width: 900.331px;
-	height: 1009.986px;
+	fill: #efebe0;
+	height: 100%;
+	width: 100%;
 }
 
 .svg-about_header-dims {
-	width: 498.161px;
-	height: 175.44px;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	// width: 498.161px;
+	// height: 175.44px;
+	fill: $accent;
+	opacity: .17;
 }
 
 .svg-arrow_down-dims {
 	width: 25.18px;
 	height: 16.164px;
+	fill: #fff;
 }
 
 .svg-bg-dims {
@@ -44,8 +53,9 @@
 }
 
 .svg-envelope2-dims {
-	width: 23px;
-	height: 16.391px;
+	width: 24px;
+	height: 24px;
+	fill: $yellow
 }
 
 .svg-envelope_n-dims {
@@ -110,6 +120,8 @@
 .svg-link-dims {
 	width: 19.125px;
 	height: 19.125px;
+	fill: #fff;
+	margin-right: 11px;
 }
 
 .svg-login-dims {
@@ -119,8 +131,9 @@
 }
 
 .svg-map_marker-dims {
-	width: 15.151px;
-	height: 21.654px;
+	width: 24px;
+	height: 24px;
+	fill: $yellow;
 }
 
 .svg-map_n-dims {
@@ -140,8 +153,9 @@
 }
 
 .svg-phone2-dims {
-	width: 16.492px;
-	height: 20.947px;
+	width: 24px;
+	height: 24px;
+	fill: $yellow;
 }
 
 .svg-phone_n-dims {
@@ -160,14 +174,16 @@
 }
 
 .svg-portfolio_header-dims {
-	width: 1175px;
-	height: 314px;
+	// width: 1175px;
+	// height: 314px;
 	fill: $accent;
+	opacity: .17;
 }
 
 .svg-skype-dims {
 	width: 24px;
 	height: 24px;
+	fill: $yellow;
 }
 
 .svg-skype_n-dims {
@@ -205,7 +221,13 @@
 }
 
 .svg-works_header-dims {
-	width: 505.101px;
-	height: 165.036px;
+	// width: 505.101px;
+	// height: 165.036px;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	fill: $accent;
+	opacity: .17;
 }
 

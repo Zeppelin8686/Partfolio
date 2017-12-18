@@ -2,6 +2,12 @@
   position: absolute;
   top: 30px;
   left: 30px;
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+.header-title {
+  padding: 10%;
 }
 
 .hamburger-menu {
@@ -9,12 +15,3 @@
   top: 30px;
   right: 30px;
 }
-
-.header-bg {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  opacity: .17;
-  z-index: 1;
-} 

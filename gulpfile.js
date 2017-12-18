@@ -4,6 +4,8 @@ const gulp = require('gulp');
 const sass = require('gulp-sass');
 const autoprefixer = require('gulp-autoprefixer');
 const rename = require('gulp-rename');
+//pug//////////////////////////////
+const pug = require('gulp-pug');
 //sprite///////////////////////////
 const svgSprite	= require('gulp-svg-sprite');
 const svgmin = require('gulp-svgmin');
@@ -39,6 +41,12 @@ gulp.task('sass', function() {
 	.pipe(sourcemaps.write('/'))
 	.pipe(gulp.dest('dist/css/'))
 	.pipe(browserSync.stream());
+	});
+
+	gulp.task('pug', function(){
+		return gulp.src('app/pug/test.pug')
+		.pipe(pug({pretty: true}))
+		.pipe(gulp.dest('testPug'));
 	});
 
 //watcher/////////////////////////////////
@@ -95,7 +103,7 @@ gulp.task('server', function() {
 
 //webpack//////////////////////////////////////
 gulp.task('webpack', function() {
-	return gulp.src('app/js/index.js')
+	return gulp.src('app/js/*.js')
 	.pipe(gulpWebpack(webpackConfig, webpack))
 	.pipe(gulp.dest('dist/js'))
 })

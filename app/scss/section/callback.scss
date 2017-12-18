@@ -1,0 +1,22 @@
+.callback {
+  display: initial;
+}
+
+.callback-form__input {
+  padding: 10px;
+  margin-bottom: 20px;
+  height: 45px;
+  width: 90%;
+  border-radius: 5px;
+  border: 1px solid transparent;
+  outline: none;
+
+  &:focus {
+    border: 1px solid $accent;
+  }
+}
+
+.callback__form-input_textarea {
+  height: 140px;
+  resize: none;
+}
