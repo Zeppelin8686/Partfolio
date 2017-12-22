@@ -1,7 +1,78 @@
 .feedbacks {
   position: relative;
   display: flex;
+  flex-direction: column;
+  height: 100%;
+  padding-bottom: 147px;
   justify-content: center;
   background-image: url('../../img/bg-works.png');
   @include bg-cover;
+}
+
+.posts {
+  display: flex;
+  align-items: center;
+  margin-bottom: 70px;
+}
+
+.posts__col {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+}
+
+.posts__left, .posts__right {
+  width: 50%;
+  margin-left: 15px;
+  margin-right: 15px;
+
+  & p {
+    @include main-text;
+  }
+}
+
+.posts__left {
+  align-self: flex-end;
+  margin-right: 15px;
+}
+
+.posts__text:before {
+  content: '';
+  display: block;
+  margin-bottom: 29px;
+  background-image: url('../../img/quotes.png');
+  height: 27px;
+  width: 33px;
+  @include bg-cover;
+}
+
+.posts__user {
+  display: flex;
+  align-items: center;
+  margin-top: 25px;
+
+  & p {
+    color: $accent;
+    font-weight: 700;
+  }
+
+  & span {
+    @include main-text;
+    color: $accent;
+    font-weight: 400;
+  }
+}
+
+.posts__user-ava {
+  width: 77px;
+  height: 77px;
+  border-radius: 50%;
+  margin-right: 21px;
+}
+
+.feedbacks__arrow-up {
+  justify-content: center;
+  margin-top: 70px;
+  margin-bottom: 70px;
+  transform: rotate(180deg);
 }

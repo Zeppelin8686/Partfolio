@@ -34,9 +34,11 @@
   }
   
   .section__title {
+    position: relative;
     display: flex;
     align-items: center;
     @include title;
+    line-height: 63px;
     text-align: center;
     color: $titles;
     text-transform: uppercase;
@@ -59,6 +61,8 @@
     }
 
     &-white {
+      margin-top: 0;
+      margin-bottom: 0;
       color: #fff;
 
       &:before {
@@ -76,6 +80,7 @@
     align-items: center;
     justify-content: center;
     @include subtitle;
+    line-height: 35px;
     text-align: center;
     text-transform: uppercase;
     color: $titles;
@@ -111,9 +116,11 @@
   }
 
   .btn {
-    flex: 1 1 auto;
-    padding: 14px 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     text-align: center;
+    height: 45px;
     font-family: 'roboto';
     font-weight: 500;
     font-style: normal;
@@ -129,9 +136,15 @@
     }
   }
 
+  .section__btn {
+    flex: 1;
+  }
+
   .submit-btn {
     outline: none;
     border: 1px solid transparent;
   }
+
+
 
   

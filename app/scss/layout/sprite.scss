@@ -3,16 +3,10 @@
 	height: 10px;
 }
 
-.svg-about_bg_left-dims {
-	fill:#f0efe9;
-	height: 100%;
-	width: 100%;
+.svg-about_bg-dims {
 }
 
 .svg-about_bg_right-dims {
-	fill: #efebe0;
-	height: 100%;
-	width: 100%;
 }
 
 .svg-about_header-dims {
@@ -20,8 +14,6 @@
 	top: 50%;
 	left: 50%;
 	transform: translate(-50%, -50%);
-	// width: 498.161px;
-	// height: 175.44px;
 	fill: $accent;
 	opacity: .17;
 }
@@ -38,8 +30,14 @@
 }
 
 .svg-blog_header-dims {
-	width: 302.193px;
-	height: 208.012px;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	// width: 302.193px;
+	// height: 208.012px;
+	fill: $accent;
+	opacity: .17;
 }
 
 .svg-check-dims {
@@ -166,11 +164,13 @@
 .svg-portf_arrow_down-dims {
 	width: 42.736px;
 	height: 27.435px;
+	fill: #fff;
 }
 
 .svg-portf_arrow_up-dims {
 	width: 42.736px;
 	height: 27.435px;
+	fill: #fff;
 }
 
 .svg-portfolio_header-dims {

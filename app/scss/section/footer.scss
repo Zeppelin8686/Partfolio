@@ -1,16 +1,13 @@
 .footer {
   position: absolute;
   display: flex;
+  justify-content: center;
+  align-items: center;
   bottom: 0;
   width: 100%;
   height: 147px;
   background-color: $titles;
   opacity: .85;
-}
-
-.footer__content {
-  display: flex;
-  align-self: stretch;
 }
 
 .footer__col {
@@ -33,20 +30,23 @@
   }
 }
 
-.footer__nav_item {
-  justify-content: space-between;
+.footer__container {
+  align-items: flex-start;
+}
+
+.footer__buttons-item {
   margin-bottom: 48px;
+  margin-right: 40px;
 
   &:after {
-  width: 0;
+  display: none;
   }
 }
 
-.nav__link {
+.footer__buttons-link {
   @include main-text;
   color: #fff;
   font-weight: 500;
-  text-align: left;
   text-decoration: none;
 
   &:hover {
@@ -63,4 +63,15 @@
   font-weight: 300;
   color: #fff;
   opacity: .5;
+}
+
+.footer__contacts_list {
+  margin-left: 0;
+}
+
+.line {
+  width: 1px;
+  height: 70%;
+  background-color: #fff;
+  opacity: .2;
 }

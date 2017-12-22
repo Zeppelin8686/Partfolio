@@ -3,24 +3,26 @@
   position: relative;
   display: flex;
   justify-content: center;
-  // align-items: center;
 }
 
 .about__col {
   position: relative;
   padding-top: 20px;
   flex: 1;
+
+  &_left {
+    background-color: #f0efe9;
+  }
+
+  &_right {
+    background-color: #eeebdf;
+  }
 }
 
 .triangle {
   width: 100%;
   position: absolute;
-  top: -166px;
-  bottom: 0;
-
-  &_right {
-    top: -161px;
-  }
+  bottom: 99%;
 }
 
 .about__content {

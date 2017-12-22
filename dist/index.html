@@ -14,34 +14,36 @@
   <div class="wrapper">
     <div class="maincontant">
       <section class="section hero section_center">
-        <a href="" class="btn authorize">Авторизоваться</a>
+        <button href="#" class="btn authorize-btn hero__autorize-btn">Авторизоваться</button>
         <div class="container">
           <div class="welcome">
-            <div class="owner">
-              <img src="img/ava.jpg" alt="avatar" class="owner-ava">
-              <div class="owner-desc">
-                <div class="owner-desc_name">Боровик Максим</div>
-                <div class="owner-desc_occup">Личный сайт веб разработчика</div>
+            <div class="owner welcome__owner">
+              <a href="index.html" class="owner__img">
+                <img src="img/ava.jpg" alt="avatar" class="owner__ava">
+              </a>
+              <div class="owner__desc">
+                <div class="owner__desc-name owner__name">Боровик Максим</div>
+                <div class="owner__desc-occup">Личный сайт веб разработчика</div>
               </div>
             </div>
-            <div class="socials">
+            <div class="socials welcome__socials">
               <ul class="socials__list">
                 <li class="socials__item">
-                  <a href="https://vk.com" target="_blank" class="socials_link">
+                  <a href="https://vk.com" target="_blank" class="socials__link">
                     <svg class="svg-vk-dims">
                       <use xlink:href="icons/sprite.svg#vk"></use>
                     </svg>
                   </a>
                 </li>
                 <li class="socials__item">
-                  <a href="https://github.com/" target="_blank" class="socials_link">
+                  <a href="https://github.com/" target="_blank" class="socials__link">
                     <svg class="svg-github-dims">
                       <use xlink:href="icons/sprite.svg#github"></use>
                     </svg>
                   </a>
                 </li>
                 <li class="socials__item">
-                  <a href="https://www.linkedin.com/" target="_blank" class="socials_link">
+                  <a href="https://www.linkedin.com/" target="_blank" class="socials__link">
                     <svg class="svg-in-dims">
                       <use xlink:href="icons/sprite.svg#in"></use>
                     </svg>
@@ -49,28 +51,28 @@
                 </li>
               </ul>
             </div>
-            <nav class="nav">
-              <ul class="nav_list">
-                <li class="nav_item">
-                  <a href="my-works.html" class="btn ">
+            <div class="buttons">
+              <ul class="buttons__list">
+                <li class="buttons__item welcome__buttons-item">
+                  <a href="my-works.html" class="buttons__link btn section__btn">
                     Мои работы
                   </a>
                 </li>
-                <li class="nav_item">
-                  <a href="about.html" class="btn ">
+                <li class="buttons__item welcome__buttons-item">
+                  <a href="about.html" class="buttons__link btn section__btn">
                     Обо мне
                   </a>
                 </li>
-                <li class="nav_item">
-                  <a href="blog.html" class="btn ">
+                <li class="buttons__item welcome__buttons-item">
+                  <a href="blog.html" class="buttons__link btn section__btn">
                     Блог
                   </a>
                 </li>
               </ul>
-            </nav>
+            </div>
           </div>
           <div class="login">
-            <h2 class="section__subtitle section__subtitle-white">Авторизация</h2>
+            <h2 class="section__subtitle section__subtitle-white login__subtitle">Авторизация</h2>
             <form action="" method="post" class="login-form">
               <div class="login-form__row login-form__row--reverse">
                 <input class="login-form__input" name="user-login" id="email" type="email" placeholder="Логин" required>
@@ -109,15 +111,15 @@
                 </div>
               </div>
             </form>
-            <nav class="nav">
-              <ul class="nav_list">
-                <li class="nav_item">
-                  <a href="#" class="btn">
+            <nav class="buttons">
+              <ul class="buttons__list">
+                <li class="buttons__item login__buttons-item">
+                  <a href="#" class="btn section__btn">
                     На главную
                   </a>
                 </li>
-                <li class="nav_item">
-                  <button type="submit" class="btn submit-btn">
+                <li class="buttons__item login__buttons-item">
+                  <button type="submit" class="btn section__btn submit-btn">
                     Войти
                   </button>
                 </li>
@@ -125,7 +127,7 @@
             </nav>
           </div>
         </div>
-        <div class="rights">© Максим Боровик | создано с любовью в LoftSchool | 2017</div>
+        <div class="rights hero__rights">© Максим Боровик | создано с любовью в LoftSchool | 2017</div>
       </section>
     </div>
   </div>
