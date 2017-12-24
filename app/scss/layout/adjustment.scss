@@ -7,7 +7,7 @@
 
 .maincontant {
   height: 100%;
-  min-height: 650px;
+  // min-height: 650px;
 }
 
 .container {
@@ -24,7 +24,7 @@
   .section {
     height: 100vh;
     background-color: #f0e6d2;
-    min-height: 650px;
+    // min-height: 650px;
   
     &_center {
       display: flex;
@@ -53,11 +53,13 @@
     &:before {
       margin-right: 30px;
       background: url('../../icons/circles_left-title.svg');
+      @include bg-cover;
     }
   
     &:after {
       margin-left: 30px;
       background: url('../../icons/circles_right-title.svg');
+      @include bg-cover;
     }
 
     &-white {
@@ -67,10 +69,12 @@
 
       &:before {
         background: url('../../icons/circles_left-title-white.svg');
+        @include bg-cover;
       }
     
       &:after {
         background: url('../../icons/circles_right-title-white.svg');
+        @include bg-cover;
       }
     }
   }
@@ -95,11 +99,13 @@
     &:before {
       margin-right: 5px;
       background: url('../../icons/circles_left-subtitle.svg');
+      @include bg-cover;
     }
   
     &:after {
       margin-left: 5px;
       background: url('../../icons/circles_right-subtitle.svg');
+      @include bg-cover;
     }
     
     &-white {
@@ -107,10 +113,12 @@
 
       &:before {
         background: url('../../icons/circles_left-subtitle-white.svg');
+        @include bg-cover;
       }
     
       &:after {
         background: url('../../icons/circles_right-subtitle-white.svg');
+        @include bg-cover;
       }
     }
   }

@@ -28,3 +28,27 @@
   font-style: normal;
   font-size: 35px;
 }
+
+@mixin laptop {
+  @media screen and (max-width: $laptop) {
+    @content;
+  }
+}
+
+@mixin tablet {
+  @media screen and (max-width: $tablet) {
+    @content;
+  }
+}
+
+@mixin phone {
+  @media screen and (max-width: $phone) {
+    @content;
+  }
+}
+
+@mixin s-phone {
+  @media screen and (max-width: $s-phone) {
+    @content;
+  }
+}

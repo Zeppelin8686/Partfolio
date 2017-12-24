@@ -48,10 +48,14 @@
 }
 
 .blog__articles {
+  display: flex;
+  flex-direction: column;
   flex: 2;
 }
 
 .article {
+  display: flex;
+  flex-direction: column;
 
   &:last-child {
     margin-bottom: 50px;

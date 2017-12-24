@@ -4,6 +4,8 @@ const gulp = require('gulp');
 const sass = require('gulp-sass');
 const autoprefixer = require('gulp-autoprefixer');
 const rename = require('gulp-rename');
+const postcss = require('gulp-postcss')
+const pixelstorem = require('postcss-pixels-to-rem');
 //pug//////////////////////////////
 const pug = require('gulp-pug');
 //sprite///////////////////////////
@@ -32,9 +34,9 @@ gulp.task('clean', function() {
 gulp.task('sass', function() {
 	return gulp.src('app/scss/main.scss')
 	.pipe(plumber())
-  .pipe(sourcemaps.init())
+	.pipe(sourcemaps.init())
   .pipe(autoprefixer({
-    browsers: ['last 2 versions']}))
+		browsers: ['last 2 versions']}))
 	.pipe(sass({outputStyle: 'compressed'}))
 	.on('error', sass.logError)
 	.pipe(rename({suffix: '.min'}))
@@ -42,6 +44,15 @@ gulp.task('sass', function() {
 	.pipe(gulp.dest('dist/css/'))
 	.pipe(browserSync.stream());
 	});
+
+	gulp.task('css', function() {
+     let plugins = [
+        pixelstorem()
+    ];      
+ return gulp.src('dist/css/main.min.css')
+.pipe(postcss(plugins))
+.pipe(gulp.dest('dist/css'));
+});
 
 	gulp.task('pug', function(){
 		return gulp.src('app/pug/test.pug')
@@ -105,7 +116,7 @@ gulp.task('server', function() {
 gulp.task('webpack', function() {
 	return gulp.src('app/js/*.js')
 	.pipe(gulpWebpack(webpackConfig, webpack))
-	.pipe(gulp.dest('dist/js'))
+	.pipe(gulp.dest('dist/js/'))
 })
 
 //build derictory "dist" /////////////////////////////

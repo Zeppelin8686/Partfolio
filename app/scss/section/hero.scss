@@ -12,14 +12,18 @@
   justify-content: space-between;
   align-items: center;
   align-self: center;
-  width: 380px;
+  min-width: 380px;
   background-color: rgba(215, 191, 155, .6);
   border-radius: 5px;
+
+  @include phone {
+    min-width: 100%;
+  }
 }
 
 .login {
   display: flex;
-  // display: none;
+  display: none;
   flex-direction: column;
   justify-content: center;
   align-items: center;
@@ -162,15 +166,47 @@ display: flex;
   top: 20px;
   right: 30px;
   align-self: flex-end;
+
+  @include phone {
+    top: 10px;
+    left: 50%;
+    transform: translateX(-50%);
+  }
 }
 
 .rights {
   color: #fff;
+  text-align: center;
+  
+
+  @include phone {
+    & span {
+      display: block;
+      flex-basis: 100%;
+    }
+  }
 }
 
 .hero__rights {
   position: absolute;
   align-self: center;
   bottom: 35px;
+
+  @include phone {
+    bottom: 10px;
+  }
 }
 
+.rights__creator:after {
+  content: '';
+  display: inline-block;
+  margin-left: 5px;
+  width: 1px;
+  height: 16px;
+  vertical-align: middle;
+  background-color: #fff;
+
+  @include phone {
+    display: none;
+  }
+}
