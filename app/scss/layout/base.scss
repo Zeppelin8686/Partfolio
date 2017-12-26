@@ -1,11 +1,18 @@
 html {
-  @include tablet {
-    font-size: 16px;
+  @include laptop {
+    font-size: 15px;
   }
 
-  
-  @include phone {
+  @include big-phone {
     font-size: 14px;
+  }
+
+  @include small-phone {
+    font-size: 12px;
+  }
+
+  @include very-small-phone {
+    font-size: 10px;
   }
 }
 

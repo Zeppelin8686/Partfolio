@@ -3,21 +3,34 @@
   height: 100%;
   background-color: #faf8fa;
   padding-bottom: 147px;
+
+  @include tablet {
+    padding-bottom: 215px;
+  }
+
+  @include phone {
+    padding-bottom: 347px;
+  }
 }
 
 .blog__content {
   margin-top: 40px;
   display: flex;
+  width: 100%;
 }
 
 .aside {
   display: flex;
   flex-direction: column;
   align-items: center;
+
+  @include tablet {
+    display: none;
+  }
 }
 
 .blog__aside {
-  flex: 1;
+  width: 30%;
 }
 
 .aside__list {
@@ -50,7 +63,11 @@
 .blog__articles {
   display: flex;
   flex-direction: column;
-  flex: 2;
+  width: 70%;
+
+  @include tablet {
+    width: 100%;
+  }
 }
 
 .article {

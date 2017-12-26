@@ -7,12 +7,24 @@
   justify-content: center;
   background-image: url('../../img/bg-works.png');
   @include bg-cover;
+
+  @include tablet {
+    padding-bottom: 215px;
+  }
+
+  @include phone {
+    padding-bottom: 347px;
+  }
 }
 
 .posts {
   display: flex;
   align-items: center;
   margin-bottom: 70px;
+
+  @include phone {
+    flex-direction: column;
+  }
 }
 
 .posts__col {
@@ -29,11 +41,20 @@
   & p {
     @include main-text;
   }
+
+  @include tablet {
+    width: initial;
+  }
 }
 
 .posts__left {
   align-self: flex-end;
   margin-right: 15px;
+}
+
+.posts__text {
+  display: flex;
+  flex-direction: column;
 }
 
 .posts__text:before {
@@ -44,6 +65,10 @@
   height: 27px;
   width: 33px;
   @include bg-cover;
+
+  @include phone {
+    align-self: center;
+  }
 }
 
 .posts__user {
@@ -75,4 +100,8 @@
   margin-top: 70px;
   margin-bottom: 70px;
   transform: rotate(180deg);
+
+  @include phone {
+    margin-bottom: 30px;
+  }
 }

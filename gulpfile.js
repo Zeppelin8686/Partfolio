@@ -62,7 +62,7 @@ gulp.task('sass', function() {
 
 //watcher/////////////////////////////////
 gulp.task('watch', function() {
-	gulp.watch('app/scss/**/*.scss', gulp.series('sass'));
+	gulp.watch('app/scss/**/*.scss', gulp.series('sass', 'css'));
 	gulp.watch('app/*.html', gulp.series('templates'));
 	gulp.watch('app/css/*.css', gulp.series('concat-css'));
 	gulp.watch('app/js/**/*.js', gulp.series('webpack'));
@@ -123,6 +123,9 @@ gulp.task('webpack', function() {
 gulp.task('default', gulp.series('clean',
 
 gulp.parallel('sass', 'templates', 'assets', 'images', 'webpack'),
+
+'css',
+
 gulp.parallel('watch', 'server')
 ));
 

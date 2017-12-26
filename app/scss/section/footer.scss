@@ -8,9 +8,43 @@
   height: 147px;
   background-color: $titles;
   opacity: .85;
+
+  & .footer__col:first-child:after {
+    display: none;
+
+    @include tablet {
+      display: block;
+    }
+  }
+
+  & .footer__col:last-child:after {
+    @include tablet {
+      display: none;
+    }
+  }
+
+  & .footer__col:nth-child(2):after {
+    @include tablet {
+      display: none;
+    }
+
+    @include phone {
+      display: block;
+    }
+  }
+
+  @include tablet {
+    flex-wrap: wrap;
+    height: 215px;
+  }
+
+  @include phone {
+    height: 347px;
+  }
 }
 
 .footer__col {
+  position: relative;
   display: flex;
   flex-direction: column;
   align-items: flex-start;
@@ -26,20 +60,97 @@
 
     &:last-child {
       opacity: .5;
+      margin-bottom: 0;
     }
+
+    @include tablet {
+      text-align: center;
+    }
+  }
+
+  &:after {
+    content: '';
+    position: absolute;
+    display: block;
+    width: 2px;
+    height: 100%;
+    background-color: #fff;
+    opacity: .2;
+
+    @include tablet {
+      width: 80%;
+      height: 2px;
+      bottom: -20px;
+      align-self: center;
+      z-index: 2;
+    }
+  }
+
+  @include laptop {
+    flex: 1 1 auto;
+  }
+
+  @include phone {
+    margin-bottom: 20px;
+    margin-top: 20px;
+  }
+}
+
+.footer__col-left {
+  @include tablet {
+    margin-bottom: 20px;
+  }
+}
+
+.footer__col-mid, .footer__col-right {
+  @include tablet {
+    flex: 1 1 auto;
   }
 }
 
 .footer__container {
   align-items: flex-start;
+
+  @include phone {
+    align-items: center;
+  }
+}
+
+.footer__text {
+  display: flex;
+  flex-direction: column;
+
+  @include tablet {
+    display: block;
+    width: 100%;
+  }
+}
+
+.footer__text-creator {
+  width: 100%;
+}
+
+.footer__buttons-list {
+  @include phone {
+    justify-content: center;
+    align-items: center;
+  }
 }
 
 .footer__buttons-item {
   margin-bottom: 48px;
   margin-right: 40px;
 
+  &:last-child {
+    margin-right: 0;
+  }
+
   &:after {
   display: none;
+  }
+
+  @include tablet {
+    margin-bottom: 20px;
   }
 }
 
@@ -54,8 +165,29 @@
   }
 }
 
+.footer__contacts_list {
+  margin-left: 0;
+
+  @include tablet {
+    align-self: flex-end;
+  }
+
+  @include phone {
+    align-self: center;
+  }
+}
+
 .footer__contacts-item {
   margin-bottom: 0;
+
+  @include tablet {
+    flex-direction: column;
+    align-items: flex-end;
+  }
+
+  @include phone {
+    align-items: center;
+  }
 }
 
 .footer__contscts-text {
@@ -65,13 +197,3 @@
   opacity: .5;
 }
 
-.footer__contacts_list {
-  margin-left: 0;
-}
-
-.line {
-  width: 1px;
-  height: 70%;
-  background-color: #fff;
-  opacity: .2;
-}

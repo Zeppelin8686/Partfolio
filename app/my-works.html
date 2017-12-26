@@ -17,21 +17,21 @@
         <div class="socials hero__socials">
           <ul class="socials__list">
             <li class="socials__item">
-              <a href="https://vk.com" target="_blank" class="socials_link">
+              <a href="https://vk.com/id1254002" target="_blank" class="socials__link">
                 <svg class="svg-vk-dims vk">
                   <use xlink:href="icons/sprite.svg#vk"></use>
                 </svg>
               </a>
             </li>
             <li class="socials__item">
-              <a href="https://github.com/" target="_blank" class="socials_link">
+              <a href="https://github.com/Zeppelin8686" target="_blank" class="socials__link">
                 <svg class="svg-github-dims github">
                   <use xlink:href="icons/sprite.svg#github"></use>
                 </svg>
               </a>
             </li>
             <li class="socials__item">
-              <a href="https://www.linkedin.com/" target="_blank" class="socials_link">
+              <a href="https://www.linkedin.com/in/maxim-borovik-4081ba113/" target="_blank" class="socials__link">
                 <svg class="svg-in-dims linkedin">
                   <use xlink:href="icons/sprite.svg#in"></use>
                 </svg>
@@ -97,9 +97,12 @@
           </svg>
         </div>
         <div class="my-works__content">
-          <div class="my-works__content-left">
+          <div class="my-works__content-slider">
+            <img src="img/slider-1.png" alt="" class="my-works__content-slider-img "></img>
+          </div>
+          <div class="my-works__content-description">
             <div class="container">
-              <h2 class="section__subtitle">Сайт школы онлайн
+              <h2 class="section__subtitle my-works__content-description-subtitle">Сайт школы онлайн
                 <br> Образования</h2>
               <p class="my-works__content-text">HTML , CSS, JAVASCRIPT</p>
               <a href="http://maxborovik.tmweb.ru/" target="_blank" class="btn my-works__content-btn section__btn">
@@ -109,27 +112,24 @@
                 Проверить сайт</a>
             </div>
           </div>
-          <div class="my-works__content-right">
-            <div class="slider">
-              <ul class="slider__list">
-                <li class="slider__item" style="background-image: url('img/slider-1.png')">1</li>
-                <li class="slider__item" style="background-image: url('img/slider-2.jpg')">
-                  <button href="#" class="slider__arrow-up">
-                    <svg class="svg-portf_arrow_up-dims">
-                      <use xlink:href="icons/sprite.svg#portf_arrow_up"></use>
-                    </svg>
-                  </button>
-                  <div class="slider__overlay"></div>
-                </li>
-                <li class="slider__item" style="background-image: url('img/slider-3.jpg')">
-                  <button href="#" class="slider__arrow-down">
-                    <svg class="svg-portf_arrow_down-dims">
-                      <use xlink:href="icons/sprite.svg#portf_arrow_down"></use>
-                    </svg>
-                  </button>
-                  <div class="slider__overlay"></div>
-                </li>
-              </ul>
+          <div class="my-works__content-slides">
+            <div class="slide">
+              <img src="img/slider-2.jpg" alt="" class="slide__img">
+              <button href="#" class="slide__arrow-up">
+                <svg class="svg-portf_arrow_up-dims">
+                  <use xlink:href="icons/sprite.svg#portf_arrow_up"></use>
+                </svg>
+              </button>
+              <div class="slider__overlay"></div>
+            </div>
+            <div class="slide">
+              <img src="img/slider-3.jpg" alt="" class="slide__img">
+              <button href="#" class="slide__arrow-down">
+                <svg class="svg-portf_arrow_down-dims">
+                  <use xlink:href="icons/sprite.svg#portf_arrow_down"></use>
+                </svg>
+              </button>
+              <div class="slider__overlay"></div>
             </div>
           </div>
         </div>
@@ -161,7 +161,6 @@
                   </div>
                 </div>
               </div>
-
             </div>
             <div class="posts__col">
               <div class="posts__right">
@@ -178,11 +177,9 @@
                       преподаватель
                     </span>
                   </div>
-
                 </div>
               </div>
             </div>
-
           </div>
           <div class="login callback">
             <h2 class="section__subtitle">Связаться со мной</h2>
@@ -219,24 +216,22 @@
           </svg>
         </button>
         <footer class="footer">
-          <div class="footer__col">
+          <div class="footer__col footer__col-left">
             <div class="container footer__container">
               <p class="footer__text">
-                Этот сайт я сделал в рамках обучения в Школе
-                <br> онлайн образования LoftSchool.
+                Этот сайт я сделал в рамках обучения в школе
+                <span class="footer__text-creator">онлайн образования LoftSchool.</span>
               </p>
               <p class="footer__text">
-                © Максим Боровик.
-                <br> Создано с любовью в LoftSchool | 2017
+                <span class="footer__text-creator">© Максим Боровик.</span> Создано с любовью в LoftSchool | 2017
               </p>
             </div>
 
           </div>
-          <div class="line"></div>
-          <div class="footer__col">
+          <div class="footer__col footer__col-mid">
             <div class="container footer__container">
-              <div class="buttons">
-                <ul class="buttons__list">
+              <div class="buttons footer__buttons">
+                <ul class="buttons__list footer__buttons-list">
                   <li class="buttons__item footer__buttons-item">
                     <a href="my-works.html" class="buttons__link footer__buttons-link">
                       Мои работы
@@ -284,8 +279,7 @@
               </ul>
             </div>
           </div>
-          <div class="line"></div>
-          <div class="footer__col">
+          <div class="footer__col footer__col-right">
             <div class="container footer__container">
               <ul class="contacts__list footer__contacts_list">
                 <li class="contacts__item footer__contacts-item">
@@ -309,7 +303,7 @@
   </div>
 
   <script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?key=AIzaSyATLwRQw--Xm7FpKfX7s86oIPnzjLkSq1U"></script>
-  <script type="text/javascript" src="js/7f93d39e648bb17e4d5e.js"></script>
+  <script type="text/javascript" src="js/020c1d5639ddee6483cd.js"></script>
 </body>
 
 </html>

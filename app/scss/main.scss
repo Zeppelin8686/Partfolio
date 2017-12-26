@@ -1,8 +1,10 @@
 /*breakpoints*/
-$laptop: 1200px;
-$tablet: 768px;
+$laptop: 1280px;
+$tablet: 800px;
+$big-phone: 600px;
 $phone: 480px;
-$s-phone: 320px; 
+$small-phone: 414px; 
+$very-small-phone: 320px;
 
 /*config*/
 @import 'config/mixins';
