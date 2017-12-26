@@ -1,20 +1,46 @@
-.socials__absolute {
+.hero__socials {
   position: absolute;
   top: 30px;
   left: 30px;
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+.header-title {
+  width: 80%;
 }
 
 .hamburger-menu {
+  border: 1px solid transparent;
+  background-color: transparent;
+  outline: none;
+  cursor: pointer;
+}
+
+.hero__hamburger-menu {
   position: absolute;
   top: 30px;
   right: 30px;
 }
 
-.header-bg {
+.arrow-down {
+  
+  background-color: transparent;
+  outline: none;
+  border: 1px solid transparent;
+  cursor: pointer;
+  opacity: .7;
+  transition: opacity .4s;
+
+  &:hover {
+    opacity: 1;
+  }
+}
+
+.hero__arrow-down {
   position: absolute;
-  top: 50%;
+  top: 90%;
   left: 50%;
-  transform: translate(-50%, -50%);
-  opacity: .17;
-  z-index: 1;
-} 
+  transform: translate(-50%, -90%);
+  z-index: 2;
+}

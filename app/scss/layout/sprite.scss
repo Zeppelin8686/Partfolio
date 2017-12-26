@@ -3,24 +3,25 @@
 	height: 10px;
 }
 
-.svg-about_bg_left-dims {
-	width: 900.006px;
-	height: 1013.986px;
+.svg-about_bg-dims {
 }
 
 .svg-about_bg_right-dims {
-	width: 900.331px;
-	height: 1009.986px;
 }
 
 .svg-about_header-dims {
-	width: 498.161px;
-	height: 175.44px;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	fill: $accent;
+	opacity: .17;
 }
 
 .svg-arrow_down-dims {
-	width: 25.18px;
-	height: 16.164px;
+	width: 25px;
+	height: 16px;
+	fill: #fff;
 }
 
 .svg-bg-dims {
@@ -29,8 +30,14 @@
 }
 
 .svg-blog_header-dims {
-	width: 302.193px;
-	height: 208.012px;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	// width: 302.193px;
+	// height: 208.012px;
+	fill: $accent;
+	opacity: .17;
 }
 
 .svg-check-dims {
@@ -44,8 +51,9 @@
 }
 
 .svg-envelope2-dims {
-	width: 23px;
-	height: 16.391px;
+	width: 24px;
+	height: 24px;
+	fill: $yellow
 }
 
 .svg-envelope_n-dims {
@@ -108,19 +116,22 @@
 }
 
 .svg-link-dims {
-	width: 19.125px;
-	height: 19.125px;
+	width: 19px;
+	height: 19px;
+	fill: #fff;
+	margin-right: 11px;
 }
 
 .svg-login-dims {
-	width: 14.137px;
-	height: 15.422px;
+	width: 14px;
+	height: 15px;
 	fill: #c4cbcd;
 }
 
 .svg-map_marker-dims {
-	width: 15.151px;
-	height: 21.654px;
+	width: 24px;
+	height: 24px;
+	fill: $yellow;
 }
 
 .svg-map_n-dims {
@@ -135,13 +146,14 @@
 }
 
 .svg-phone-dims {
-	width: 18.864px;
-	height: 18.863px;
+	width: 18px;
+	height: 18px;
 }
 
 .svg-phone2-dims {
-	width: 16.492px;
-	height: 20.947px;
+	width: 24px;
+	height: 24px;
+	fill: $yellow;
 }
 
 .svg-phone_n-dims {
@@ -150,24 +162,28 @@
 }
 
 .svg-portf_arrow_down-dims {
-	width: 42.736px;
-	height: 27.435px;
+	width: 42px;
+	height: 27px;
+	fill: #fff;
 }
 
 .svg-portf_arrow_up-dims {
-	width: 42.736px;
-	height: 27.435px;
+	width: 42px;
+	height: 27px;
+	fill: #fff;
 }
 
 .svg-portfolio_header-dims {
-	width: 1175px;
-	height: 314px;
+	// width: 1175px;
+	// height: 314px;
 	fill: $accent;
+	opacity: .17;
 }
 
 .svg-skype-dims {
 	width: 24px;
 	height: 24px;
+	fill: $yellow;
 }
 
 .svg-skype_n-dims {
@@ -176,8 +192,8 @@
 }
 
 .svg-telegram_logo-dims {
-	width: 238.892px;
-	height: 238.892px;
+	width: 239px;
+	height: 239px;
 }
 
 .svg-vk-dims {
@@ -205,7 +221,13 @@
 }
 
 .svg-works_header-dims {
-	width: 505.101px;
-	height: 165.036px;
+	// width: 505.101px;
+	// height: 165.036px;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	fill: $accent;
+	opacity: .17;
 }
 

@@ -1,3 +1,9 @@
+/*breakpoints*/
+$laptop: 1200px;
+$tablet: 768px;
+$phone: 480px;
+$s-phone: 320px; 
+
 /*config*/
 @import 'config/mixins';
 @import 'config/variables';
@@ -10,6 +16,13 @@
 
 /*section*/
 @import 'section/hero';
-@import 'section/login';
+@import 'section/hero-overlay';
 @import 'section/login-form';
 @import 'section/header';
+@import 'section/about';
+@import 'section/contacts';
+@import 'section/footer';
+@import 'section/my-works';
+@import 'section/feedbacks';
+@import 'section/callback-form';
+@import 'section/blog';

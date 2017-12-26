@@ -1,3 +1,14 @@
+html {
+  @include tablet {
+    font-size: 16px;
+  }
+
+  
+  @include phone {
+    font-size: 14px;
+  }
+}
+
 body {
   margin: 0;
   padding: 0;

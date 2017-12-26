@@ -7,31 +7,31 @@
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <link rel="stylesheet" href="css/normalize.css">
   <link rel="stylesheet" href="css/main.min.css">
-  <title>Partfolio</title>
+  <title>About</title>
 </head>
 
 <body>
   <div class="wrapper">
     <div class="maincontant">
-      <header class="section hero section_center">
-        <div class="socials socials__absolute">
-          <ul class="socials_list">
-            <li class="socials_item">
-              <a href="https://vk.com" target="_blank" class="socials_link">
+      <section class="section hero section_center">
+        <div class="socials hero__socials">
+          <ul class="socials__list">
+            <li class="socials__item">
+              <a href="https://vk.com" target="_blank" class="socials__link">
                 <svg class="svg-vk-dims vk">
                   <use xlink:href="icons/sprite.svg#vk"></use>
                 </svg>
               </a>
             </li>
-            <li class="socials_item">
-              <a href="https://github.com/" target="_blank" class="socials_link">
+            <li class="socials__item">
+              <a href="https://github.com/" target="_blank" class="socials__link">
                 <svg class="svg-github-dims github">
                   <use xlink:href="icons/sprite.svg#github"></use>
                 </svg>
               </a>
             </li>
-            <li class="socials_item">
-              <a href="https://www.linkedin.com/" target="_blank" class="socials_link">
+            <li class="socials__item">
+              <a href="https://www.linkedin.com/" target="_blank" class="socials__link">
                 <svg class="svg-in-dims linkedin">
                   <use xlink:href="icons/sprite.svg#in"></use>
                 </svg>
@@ -39,28 +39,261 @@
             </li>
           </ul>
         </div>
-        <a href="#" class="hamburger-menu">
+        <button href="#" class="hamburger-menu hero__hamburger-menu">
           <svg class="svg-hamburger-dims">
             <use xlink:href="icons/sprite.svg#hamburger"></use>
           </svg>
-        </a>
-        <div class="container about-container">
-          <div class="header-bg">
-            <svg class="svg-portfolio_header-dims">
+        </button>
+        <div class="container">
+          <div class="header-title">
+            <svg class="svg-portfolio_header-dims" viewBox="0 0 1175 314" preserveAspectRatio="none">
               <use xlink:href="icons/sprite.svg#portfolio_header"></use>
             </svg>
           </div>
-          <div class="owner">
-            <img src="img/ava.jpg" alt="avatar" class="owner-ava">
-            <div class="owner-desc">
-              <div class="owner-desc_name">Боровик Максим</div>
-              <div class="owner-desc_occup">Личный сайт веб разработчика</div>
+          <div class="owner hero__owner">
+            <a href="index.html" class="owner__img">
+              <img src="img/ava.jpg" alt="avatar" class="owner__ava">
+            </a>
+            <div class="owner__desc">
+              <div class="owner__desc-name owner__name">Боровик Максим</div>
+              <div class="owner__desc-occup">Личный сайт веб разработчика</div>
             </div>
           </div>
         </div>
-      </header>
+        <button href="#" class="arrow-down hero__arrow-down">
+          <svg class="svg-arrow_down-dims">
+            <use xlink:href="icons/sprite.svg#arrow_down"></use>
+          </svg>
+        </button>
+        <div class="overlay hero__overlay">
+            <nav class="overlay-menu">
+              <ul class="overlay__menu-list">
+                <li class="overlay__menu-item hero__overlay-menu-item">
+                  <a href="my-works.html" class="section__title section__title-white overlay__menu-link" data-index="2">Мои работы</a>
+                </li>
+                <li class="overlay__menu-item hero__overlay-menu-item">
+                  <a href="blog.html" class="section__title section__title-white overlay__menu-link" data-index="5">Блог</a>
+                </li>
+                <li class="overlay__menu-item hero__overlay-menu-item">
+                  <a href="about.html" class="section__title section__title-white overlay__menu-link" data-index="6">Обо мне</a>
+                </li>
+                <li class="overlay__menu-item hero__overlay-menu-item">
+                  <a href="index.html" class="section__title section__title-white overlay__menu-link" data-index="4">Авторизация</a>
+                </li>
+              </ul>
+            </nav>
+          </div>
+      </section>
+      <section class="section about">
+        <div class="triangle">
+          <svg class="svg-about_bg-dims" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 85" preserveAspectRatio="none">
+            <polygon class="left" points="0,0   0,86   500.8,86   500.8,75.5" fill='#f0efe9'></polygon>
+            <polygon class="right" points="1000,0   1000,86   500,86   500,75.5" fill='#efebe0'></polygon>
+          </svg>
+        </div>
+        <div class="about__col about__col_left">
+          <div class="container">
+            <div class="about__content">
+              <h1 class="section__title about__title">Обо мне
+                <svg class="svg-about_header-dims" viewBox="0 0 498.161 174.44" preserveAspectRatio="none">
+                  <use xlink:href="icons/sprite.svg#about_header"></use>
+                </svg>
+              </h1>
+              <div class="user-desc">
+                <img src="img/ava.jpg" alt="foto" class="user-desc__ava">
+                <h2 class="section__subtitle user-desc__subtitle">Кто я</h2>
+                <p>
+                  Я веб разработчик из Новосибирска. Мне 27 лет. Я занимаюсь разработкой современных сайтов и приложений. Мне нравится делать
+                  интересные и современные проекты.
+                </p>
+                <p>
+                  Этот сайт я сделал в рамках обучения в Школе онлайн образования LoftSchool. Чуть позже я освежу в нём свой контент. А пока
+                  посмотрите, как тут всё классно и красиво!
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="about__col about__col_right">
+          <div class="container">
+            <div class="about__content about__content-right">
+              <h2 class="section__subtitle">Чем я могу быть
+                <br> вам полезен</h2>
+              <p>
+                Больше всего меня привлекет Frontend разработка, но я также знаком и могу решать не сложные задачина Backend. Но давайте
+                по порядку.
+              </p>
+              <ul class="skills">
+                <li class="skills__item">Frontend
+                  <ul class="skills-desc">
+                    <li class="skills-desc__item">
+                      <img src="icons/skills/HTML5.png" alt="" class="skills-desc__pic">
+                    </li>
+                    <li class="skills-desc__item">
+                      <img src="icons/skills/CSS3.png" alt="" class="skills-desc__pic">
+                    </li>
+                    <li class="skills-desc__item">
+                      <img src="icons/skills/JavaScript & jQuery.png" alt="" class="skills-desc__pic">
+                    </li>
+                  </ul>
+                </li>
+                <li class="skills__item">Backend
+                  <ul class="skills-desc">
+                    <li class="skills-desc__item">
+                      <img src="icons/skills/PHP.png" alt="" class="skills-desc__pic">
+                    </li>
+                    <li class="skills-desc__item">
+                      <img src="icons/skills/mySQL.png" alt="" class="skills-desc__pic">
+                    </li>
+                    <li class="skills-desc__item">
+                      <img src="icons/skills/Node.js & npm.png" alt="" class="skills-desc__pic">
+                    </li>
+                    <li class="skills-desc__item">
+                      <img src="icons/skills/Mongo.png" alt="" class="skills-desc__pic">
+                    </li>
+                  </ul>
+                </li>
+                <li class="skills__item">WorkFlow
+                  <ul class="skills-desc">
+                    <li class="skills-desc__item">
+                      <img src="icons/skills/Git.png" alt="" class="skills-desc__pic">
+                    </li>
+                    <li class="skills-desc__item">
+                      <img src="icons/skills/Gulp.png" alt="" class="skills-desc__pic">
+                    </li>
+                    <li class="skills-desc__item">
+                      <img src="icons/skills/Bower.png" alt="" class="skills-desc__pic">
+                    </li>
+                  </ul>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="section contacts">
+        <div id="map" class="map"></div>
+        <div class="contacts__info">
+          <h2 class="section__subtitle contacts__subtitle">Контакты</h2>
+          <ul class="contacts__list">
+            <li class="contacts__item">
+              <svg class="svg-skype-dims">
+                <use xlink:href="icons/sprite.svg#skype"></use>
+              </svg>
+              <span class="contacts__text">Zepppelin8686</span>
+            </li>
+            <li class="contacts__item">
+              <svg class="svg-envelope2-dims">
+                <use xlink:href="icons/sprite.svg#envelope2"></use>
+              </svg>
+              <span class="contacts__text">Zepppelin8686@gmail.com</span>
+            </li>
+            <li class="contacts__item">
+              <svg class="svg-phone2-dims">
+                <use xlink:href="icons/sprite.svg#phone2"></use>
+              </svg>
+              <span class="contacts__text">+971 56 1395013</span>
+            </li>
+            <li class="contacts__item">
+              <svg class="svg-map_marker-dims">
+                <use xlink:href="icons/sprite.svg#map_marker"></use>
+              </svg>
+              <span class="contacts__text">UAE, Dubai</span>
+            </li>
+          </ul>
+        </div>
+        <footer class="footer">
+          <div class="footer__col">
+            <div class="container footer__container">
+              <p class="footer__text">
+                Этот сайт я сделал в рамках обучения в Школе
+                <br> онлайн образования LoftSchool.
+              </p>
+              <p class="footer__text">
+                © Максим Боровик.
+                <br> Создано с любовью в LoftSchool | 2017
+              </p>
+            </div>
+
+          </div>
+          <div class="line"></div>
+          <div class="footer__col">
+            <div class="container footer__container">
+              <div class="buttons">
+                <ul class="buttons__list">
+                  <li class="buttons__item footer__buttons-item">
+                    <a href="my-works.html" class="buttons__link footer__buttons-link">
+                      Мои работы
+                    </a>
+                  </li>
+                  <li class="buttons__item footer__buttons-item">
+                    <a href="about.html" class="buttons__link footer__buttons-link">
+                      Обо мне
+                    </a>
+                  </li>
+                  <li class="buttons__item footer__buttons-item">
+                    <a href="blog.html" class="buttons__link footer__buttons-link">
+                      Блог
+                    </a>
+                  </li>
+                  <li class="buttons__item footer__buttons-item">
+                    <a href="blog.html" class="buttons__link footer__buttons-link">
+                      Авторизация
+                    </a>
+                  </li>
+                </ul>
+              </div>
+              <ul class="socials__list">
+                <li class="socials__item">
+                  <a href="https://vk.com" target="_blank" class="socials_link">
+                    <svg class="svg-vk-dims">
+                      <use xlink:href="icons/sprite.svg#vk"></use>
+                    </svg>
+                  </a>
+                </li>
+                <li class="socials__item">
+                  <a href="https://github.com/" target="_blank" class="socials_link">
+                    <svg class="svg-github-dims">
+                      <use xlink:href="icons/sprite.svg#github"></use>
+                    </svg>
+                  </a>
+                </li>
+                <li class="socials__item">
+                  <a href="https://www.linkedin.com/" target="_blank" class="socials_link">
+                    <svg class="svg-in-dims">
+                      <use xlink:href="icons/sprite.svg#in"></use>
+                    </svg>
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div class="line"></div>
+          <div class="footer__col">
+            <div class="container footer__container">
+              <ul class="contacts__list footer__contacts_list">
+                <li class="contacts__item footer__contacts-item">
+                  <span class="contacts__text footer__contscts-text">Zepppelin8686</span>
+                </li>
+                <li class="contacts__item footer__contacts-item">
+                  <span class="contacts__text footer__contscts-text">Zepppelin8686@gmail.com</span>
+                </li>
+                <li class="contacts__item footer__contacts-item">
+                  <span class="contacts__text footer__contscts-text">+971 56 1395013</span>
+                </li>
+                <li class="contacts__item footer__contacts-item">
+                  <span class="contacts__text footer__contscts-text">UAE, Dubai</span>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </footer>
+      </section>
     </div>
   </div>
+
+  <script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?key=AIzaSyATLwRQw--Xm7FpKfX7s86oIPnzjLkSq1U"></script>
+  <script type="text/javascript" src="js/7f93d39e648bb17e4d5e.js"></script>
 </body>
 
 </html>

@@ -1,0 +1,83 @@
+doctype html
+html(lang='en')
+	head
+		meta(charset='UTF-8')
+		meta(name='viewport', content='width=device-width, initial-scale=1.0')
+		meta(http-equiv='X-UA-Compatible', content='ie=edge')
+		link(rel='stylesheet', href='css/normalize.css')
+		link(rel='stylesheet', href='css/main.min.css')
+		title Partfolio
+	body
+		.wrapper
+			.maincontant
+				section.section.hero.section_center
+					a.btn.authorize(href='#') Авторизоваться
+					.container
+						.welcome
+							.owner
+								img.owner-ava(src='img/ava.jpg', alt='avatar')
+								.owner-desc
+									.owner-desc_name Боровик Максим
+									.owner-desc_occup Личный сайт веб разработчика
+							.socials
+								ul.socials_list
+									li.socials_item
+										a.socials_link(href='https://vk.com', target='_blank')
+											svg.svg-vk-dims
+												use(xlink:href='icons/sprite.svg#vk')
+									li.socials_item
+										a.socials_link(href='https://github.com/', target='_blank')
+											svg.svg-github-dims
+												use(xlink:href='icons/sprite.svg#github')
+									li.socials_item
+										a.socials_link(href='https://www.linkedin.com/', target='_blank')
+											svg.svg-in-dims
+												use(xlink:href='icons/sprite.svg#in')
+							nav.nav
+								ul.nav_list
+									li.nav_item
+										a.btn(href='my-works.html')
+											| Мои работы
+									li.nav_item
+										a.btn(href='about.html')
+											| Обо мне
+									li.nav_item
+										a.btn(href='blog.html')
+											| Блог
+						.login
+							h2.subtitle Авторизация
+							form.login-form(action='', method='post')
+								.login-form__row.login-form__row--reverse
+									input#email.login-form__input(name='user-login', type='email', placeholder='Логин', required='')
+									label.login-form__block.login-form__block--login(for='email')
+										svg.svg-login-dims
+											use(xlink:href='icons/sprite.svg#login')
+									input#psw.login-form__input(name='user-password', type='password', placeholder='Пароль', required='')
+									label.login-form__block.login-form__block--psw(for='psw')
+										svg.svg-password-dims
+											use(xlink:href='icons/sprite.svg#password')
+								.login-from__buttons
+									.login-form__row
+										label.login-form__radio.login-form__radio--checkbox
+											input.login-form__radio-elem(name='callback', type='checkbox')
+											.login-form__radio-fake
+											.login-form__title Я человек
+									.login-form__row
+										p.login-form__text Вы точно не робот?
+										label.login-form__radio
+											input.login-form__radio-elem(name='answer', type='radio')
+											.login-form__radio-fake
+											.login-form__title Да
+										label.login-form__radio
+											input.login-form__radio-elem(checked='', name='answer', type='radio')
+											.login-form__radio-fake
+											.login-form__title Не уверен
+							nav.nav
+								ul.nav_list
+									li.nav_item
+										a.btn(href='#')
+											| На главную
+									li.nav_item
+										button.btn.submit-btn(type='submit')
+											| Войти
+					.rights © Максим Боровик | создано с любовью в LoftSchool | 2017

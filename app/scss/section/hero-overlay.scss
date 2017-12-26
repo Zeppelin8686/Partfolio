@@ -1,0 +1,50 @@
+.overlay {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: rgba($yellow, 0);
+  height: 0;
+  transition: background-color .4s;
+
+  &.overlay--active {
+    background-color: rgba($yellow, .8);
+    height: 100%;
+    left: 0;
+  }
+}
+
+.hero__overlay {
+  position: fixed;
+  top: 0;
+  left: -9999px;
+  bottom: 0;
+  right: 0;
+  z-index: 10;
+}
+
+.overlay__menu-list {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.overlay__menu-link {
+  text-decoration: none;
+
+  &:before, &:after {
+    opacity: 0;   
+    transition: opacity .4s; 
+  }
+}
+
+.hero__overlay-menu-item {
+  margin-bottom: 90px;
+}
+
+.overlay__menu-item:hover .overlay__menu-link:before {
+  opacity: 1;
+}
+
+.overlay__menu-item:hover .overlay__menu-link:after {
+  opacity: 1;
+}
