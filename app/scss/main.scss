@@ -28,3 +28,9 @@ $very-small-phone: 320px;
 @import 'section/feedbacks';
 @import 'section/callback-form';
 @import 'section/blog';
+
+/*admin*/
+@import 'admin/admin-adjustments';
+@import 'admin/about-tab';
+@import 'admin/works-tab';
+@import 'admin/blog-tab';
