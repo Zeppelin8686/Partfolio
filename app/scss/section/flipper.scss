@@ -1,0 +1,35 @@
+.container-flip {
+  perspective: 500px;
+  // position: absolute;
+  // top: 50%;
+  // left: 50%;
+  // transform: translate(-50%, -50%);
+}
+
+.flipper--hover {
+  transform: rotateY(180deg);
+}
+
+.flipper {
+  position: relative;
+  transform-style: preserve-3d;
+  transition: .6s;
+  width: 380px;
+  height: 420px;
+}
+
+.login, .welcome {
+  position: absolute;
+  top: 0;
+  left: 0;
+  backface-visibility: hidden;
+}
+
+.welcome {
+  z-index: 2;
+  transform: rotateY(0deg);
+}
+
+.login {
+  transform: rotateY(180deg);
+}

@@ -124,9 +124,9 @@ gulp.task('webpack', function() {
       filename: 'bundle.js'
   	},
   	plugins: [
-    new uglifyjsWebpack({
-      sourceMap: true
-    })
+    // new uglifyjsWebpack({
+    //   sourceMap: true
+    // })
 		]
 	},
 	webpack))

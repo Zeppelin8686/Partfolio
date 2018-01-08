@@ -144,6 +144,9 @@
 }
 
 .skills-desc__item {
+  position: relative;
+  width: 120px;
+  height: 120px;
   margin-right: 40px;
 
   &:last-child {
@@ -165,4 +168,6 @@
     align-items: center;
   }
 }
+
+
 
