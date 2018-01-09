@@ -26,6 +26,10 @@ body {
   -moz-osx-font-smoothing: grayscale;
 }
 
+.body--active {
+  overflow: hidden;
+}
+
 *, *:before, *:after {
   box-sizing: border-box;
 }

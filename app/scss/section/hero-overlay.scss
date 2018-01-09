@@ -15,6 +15,8 @@
 
 .hero__overlay {
   position: fixed;
+  overflow: hidden;
+  max-height: 100vh;
   top: 0;
   left: -9999px;
   bottom: 0;
@@ -48,3 +50,4 @@
 .overlay__menu-item:hover .overlay__menu-link:after {
   opacity: 1;
 }
+

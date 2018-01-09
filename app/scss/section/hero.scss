@@ -16,6 +16,7 @@
   animation: bg 90s linear infinite;
 }
 
+
 @keyframes bg {
   from {
     transform: translateX(0);
@@ -25,6 +26,7 @@
     transform: translate(-3056px);
   }
 }
+
 
 .welcome {
   display: flex;
@@ -177,6 +179,10 @@ display: flex;
   &:hover {
     background-color: #fff;
     color: $accent;
+  }
+
+  &--active {
+    left: -9999px;
   }
 }
 
