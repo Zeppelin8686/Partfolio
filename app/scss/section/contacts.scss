@@ -15,12 +15,17 @@
   width: 380px;
   display: flex;
   flex-direction: column;
-  top: 50%;
+  top: 40%;
   left: 50%;
   transform: translate(-50%, -50%);
   background: #fcfcfc;
   border-radius: 5px;
   opacity: .85;
+
+  @include phone {
+    width: 100%;
+    top: 152px;
+  }
 }
 
 .contacts__subtitle {
@@ -43,4 +48,5 @@
   font-weight: 500;
   opacity: .8;
   margin-left: 10px;
+  text-decoration: none;
 }

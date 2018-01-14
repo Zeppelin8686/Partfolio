@@ -5,132 +5,149 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" type="img/favicon.ico" href="icons/favicon.ico">
+
   <link rel="stylesheet" href="css/normalize.css">
   <link rel="stylesheet" href="css/main.min.css">
   <title>Partfolio</title>
 </head>
 
 <body>
+  <div class="preloader">
+    <img src="img/desert_prel_bg.jpg" alt="" class="preloder__img">
+    <svg class="preloader__pic" xmlns="http://www.w3.org/2000/svg" viewBox="-38 -38 76 76">
+      <circle class="preloader__pic1" cx="20.021" cy="6" r="6" />
+      <circle class="preloader__pic2" cx="20.021" cy="6" r="4.5" />
+      <circle class="preloader__pic3" cx="20.021" cy="6" r="3" />
+    </svg>
+    <div class="preloader__percents">0%</div>
+  </div>
   <div class="wrapper">
     <div class="maincontant">
       <section class="section hero section_center">
+        <div class="hero__bg"></div>
         <button href="#" class="btn authorize-btn hero__autorize-btn">Авторизоваться</button>
-        <div class="container">
-          <div class="welcome">
-            <div class="owner welcome__owner">
-              <a href="index.html" class="owner__img">
-                <img src="img/ava.jpg" alt="avatar" class="owner__ava">
-              </a>
-              <div class="owner__desc">
-                <div class="owner__desc-name owner__name">Боровик Максим</div>
-                <div class="owner__desc-occup">Личный сайт веб разработчика</div>
-              </div>
-            </div>
-            <div class="socials welcome__socials">
-              <ul class="socials__list">
-                <li class="socials__item">
-                  <a href="https://vk.com" target="_blank" class="socials__link">
-                    <svg class="svg-vk-dims">
-                      <use xlink:href="icons/sprite.svg#vk"></use>
-                    </svg>
-                  </a>
-                </li>
-                <li class="socials__item">
-                  <a href="https://github.com/" target="_blank" class="socials__link">
-                    <svg class="svg-github-dims">
-                      <use xlink:href="icons/sprite.svg#github"></use>
-                    </svg>
-                  </a>
-                </li>
-                <li class="socials__item">
-                  <a href="https://www.linkedin.com/" target="_blank" class="socials__link">
-                    <svg class="svg-in-dims">
-                      <use xlink:href="icons/sprite.svg#in"></use>
-                    </svg>
-                  </a>
-                </li>
-              </ul>
-            </div>
-            <div class="buttons">
-              <ul class="buttons__list">
-                <li class="buttons__item welcome__buttons-item">
-                  <a href="my-works.html" class="buttons__link btn section__btn">
-                    Мои работы
-                  </a>
-                </li>
-                <li class="buttons__item welcome__buttons-item">
-                  <a href="about.html" class="buttons__link btn section__btn">
-                    Обо мне
-                  </a>
-                </li>
-                <li class="buttons__item welcome__buttons-item">
-                  <a href="blog.html" class="buttons__link btn section__btn">
-                    Блог
-                  </a>
-                </li>
-              </ul>
-            </div>
-          </div>
-          <div class="login">
-            <h2 class="section__subtitle section__subtitle-white login__subtitle">Авторизация</h2>
-            <form action="" method="post" class="login-form">
-              <div class="login-form__row login-form__row--reverse">
-                <input class="login-form__input" name="user-login" id="email" type="email" placeholder="Логин" required>
-                <label class="login-form__block login-form__block--login" for="email">
-                  <svg class="svg-login-dims">
-                    <use xlink:href="icons/sprite.svg#login"></use>
-                  </svg>
-                </label>
-                <input class="login-form__input" name="user-password" id="psw" type="password" placeholder="Пароль" required>
-                <label class="login-form__block login-form__block--psw" for="psw">
-                  <svg class="svg-password-dims">
-                    <use xlink:href="icons/sprite.svg#password"></use>
-                  </svg>
-                </label>
-              </div>
-              <div class="login-from__buttons">
-                <div class="login-form__row">
-                  <label class="login-form__radio login-form__radio--checkbox">
-                    <input class="login-form__radio-elem" name="callback" type="checkbox">
-                    <div class="login-form__radio-fake"></div>
-                    <div class="login-form__title">Я человек</div>
-                  </label>
-                </div>
-                <div class="login-form__row">
-                  <p class="login-form__text">Вы точно не робот?</p>
-                  <label class="login-form__radio">
-                    <input class="login-form__radio-elem" name="answer" type="radio">
-                    <div class="login-form__radio-fake"></div>
-                    <div class="login-form__title">Да</div>
-                  </label>
-                  <label class="login-form__radio">
-                    <input class="login-form__radio-elem" checked name="answer" type="radio">
-                    <div class="login-form__radio-fake"></div>
-                    <div class="login-form__title">Не уверен</div>
-                  </label>
+        <div class="container container-flip">
+          <div class="flipper">
+            <div class="welcome">
+              <div class="owner welcome__owner">
+                <a href="admin/about-tab.html" class="owner__img">
+                  <img src="img/ava.jpg" alt="avatar" class="owner__ava">
+                </a>
+                <div class="owner__desc">
+                  <div class="owner__desc-name">Боровик Максим</div>
+                  <div class="owner__desc-occup">Личный сайт веб разработчика</div>
                 </div>
               </div>
-            </form>
-            <nav class="buttons">
-              <ul class="buttons__list">
-                <li class="buttons__item login__buttons-item">
-                  <a href="#" class="btn section__btn">
-                    На главную
-                  </a>
-                </li>
-                <li class="buttons__item login__buttons-item">
-                  <button type="submit" class="btn section__btn submit-btn">
-                    Войти
-                  </button>
-                </li>
-              </ul>
-            </nav>
+              <div class="socials welcome__socials">
+                <ul class="socials__list">
+                  <li class="socials__item">
+                    <a href="https://vk.com/id1254002" target="_blank" class="socials__link">
+                      <svg class="svg-vk-dims">
+                        <use xlink:href="icons/sprite.svg#vk"></use>
+                      </svg>
+                    </a>
+                  </li>
+                  <li class="socials__item">
+                    <a href="https://github.com/Zeppelin8686" target="_blank" class="socials__link">
+                      <svg class="svg-github-dims">
+                        <use xlink:href="icons/sprite.svg#github"></use>
+                      </svg>
+                    </a>
+                  </li>
+                  <li class="socials__item">
+                    <a href="https://www.linkedin.com/in/maxim-borovik-4081ba113/" target="_blank" class="socials__link">
+                      <svg class="svg-in-dims">
+                        <use xlink:href="icons/sprite.svg#in"></use>
+                      </svg>
+                    </a>
+                  </li>
+                </ul>
+              </div>
+              <div class="buttons">
+                <ul class="buttons__list">
+                  <li class="buttons__item welcome__buttons-item">
+                    <a href="my-works.html" class="buttons__link btn section__btn">
+                      Мои работы
+                    </a>
+                  </li>
+                  <li class="buttons__item welcome__buttons-item">
+                    <a href="about.html" class="buttons__link btn section__btn">
+                      Обо мне
+                    </a>
+                  </li>
+                  <li class="buttons__item welcome__buttons-item">
+                    <a href="blog.html" class="buttons__link btn section__btn">
+                      Блог
+                    </a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+            <div class="login">
+              <h2 class="section__subtitle section__subtitle-white login__subtitle">Авторизация</h2>
+              <form action="" method="post" class="login-form">
+                <div class="login-form__row login-form__row--reverse">
+                  <input class="login-form__input" name="user-login" id="email" type="email" placeholder="Логин" required>
+                  <label class="login-form__block login-form__block--login" for="email">
+                    <svg class="svg-login-dims">
+                      <use xlink:href="icons/sprite.svg#login"></use>
+                    </svg>
+                  </label>
+                  <input class="login-form__input" name="user-password" id="psw" type="password" placeholder="Пароль" required>
+                  <label class="login-form__block login-form__block--psw" for="psw">
+                    <svg class="svg-password-dims">
+                      <use xlink:href="icons/sprite.svg#password"></use>
+                    </svg>
+                  </label>
+                </div>
+                <div class="login-from__buttons">
+                  <div class="login-form__row">
+                    <label class="login-form__radio login-form__radio--checkbox">
+                      <input class="login-form__radio-elem" name="callback" type="checkbox">
+                      <div class="login-form__radio-fake"></div>
+                      <div class="login-form__title">Я человек</div>
+                    </label>
+                  </div>
+                  <div class="login-form__row">
+                    <p class="login-form__text">Вы точно не робот?</p>
+                    <label class="login-form__radio">
+                      <input class="login-form__radio-elem" name="answer" type="radio">
+                      <div class="login-form__radio-fake"></div>
+                      <div class="login-form__title">Да</div>
+                    </label>
+                    <label class="login-form__radio">
+                      <input class="login-form__radio-elem" checked name="answer" type="radio">
+                      <div class="login-form__radio-fake"></div>
+                      <div class="login-form__title">Не уверен</div>
+                    </label>
+                  </div>
+                </div>
+              </form>
+              <nav class="buttons">
+                <ul class="buttons__list">
+                  <li class="buttons__item login__buttons-item">
+                    <a href="index.html" class="btn section__btn btn-main-page">
+                      На главную
+                    </a>
+                  </li>
+                  <li class="buttons__item login__buttons-item">
+                    <a href="admin/about-tab.html" class="btn section__btn">
+                      Войти
+                    </a>
+                  </li>
+                </ul>
+              </nav>
+            </div>
           </div>
         </div>
-        <p class="rights hero__rights"> <span class="rights__creator">© Максим Боровик</span> создано с любовью в LoftSchool | 2017</p>
+        <p class="rights hero__rights">
+          <span class="rights__creator">© Максим Боровик</span> создано с любовью в LoftSchool | 2017
+        </p>
       </section>
     </div>
   </div>
+  <script type="text/javascript" src="js/bundle.js"></script>
 </body>
 
 </html>

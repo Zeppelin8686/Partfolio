@@ -1,5 +1,11 @@
 .callback {
-  display: initial;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  align-self: center;
+  width: 380px;
+  border-radius: 5px;
   background-color: rgba(#ddc9aa, .3);
 }
 

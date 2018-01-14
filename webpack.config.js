@@ -3,11 +3,13 @@ const uglifyjsWebpack = require('uglifyjs-webpack-plugin');
 
 const config = {
   output: {
-    filename: "bundle.js"
+    filename: 'bundle.js'
   },
-  plugins: [
-    new uglifyjsWebpack({
-      sourceMap: true
-    })
-  ]
+  // plugins: [
+  //   new uglifyjsWebpack({
+  //     sourceMap: true
+  //   })
+  // ]
 };
+
+module.exports = config;

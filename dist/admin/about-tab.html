@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="icon" type="img/favicon.ico" href="icons/favicon.ico">
+  <link rel="stylesheet" href="../css/normalize.css">
+  <link rel="stylesheet" href="../css/main.min.css">
+  <title>Admin</title>
+</head>
+
+<body>
+  <div class="wrapper admin-wrapper">
+    <div class="maincontant admin-main-content">
+      <header class="admin-header">
+        <div class="container">
+          <div class="admin-header__content">
+            <h1 class="admin-header__title">Панель администрирования</h1>
+            <a href="../index.html" class="admin-header__link">Вернуться на сайт</a>
+          </div>
+        </div>
+      </header>
+      <nav class="tabs">
+        <a href="../admin/about-tab.html" class="btn tabs__btn">
+          Обо мне
+        </a>
+        <a href="../admin/blog-tab.html" class="btn tabs__btn">
+          Блог
+        </a>
+        <a href="../admin/works-tab.html" class="btn tabs__btn">
+          Мои работы
+        </a>
+      </nav>
+      <section class="admin">
+        <div class="container admin__container">
+          <h2 class="admin__subtitle">Страница &#171;Обо мне&#187;</h2>
+          <div class="admin-skills-form">
+            <form action="" method="post">
+              <ul class="admin-skills">
+                <li class="admin-skills__item admin-skills__frontend">Frontend
+                  <ul class="admin-skills-desc">
+                    <li class="admin-skills-desc__item">
+                      <label for="percent" class="admin-skills-desc__name">HTML
+                        <input type="text" id="percent" class="admin-skills-desc__input">
+                      </label>
+
+                      <!-- <span class="admin-skills-desc__symbol">%</span> -->
+                    </li>
+                    <li class="admin-skills-desc__item">
+                      <label for="percent" class="admin-skills-desc__name">CSS
+                        <input type="text" id="percent" class="admin-skills-desc__input">
+                      </label>
+                    </li>
+                    <li class="admin-skills-desc__item">
+                      <label for="percent" class="admin-skills-desc__name">JavaScript
+                        <input type="text" id="percent" class="admin-skills-desc__input">
+                      </label>
+                    </li>
+                  </ul>
+                </li>
+                <li class="admin-skills__item admin-skills__backend">Backend
+                  <ul class="admin-skills-desc">
+                    <li class="admin-skills-desc__item">
+                      <label for="percent" class="admin-skills-desc__name">PHP
+                        <input type="text" id="percent" class="admin-skills-desc__input">
+                      </label>
+                    </li>
+                    <li class="admin-skills-desc__item">
+                      <label for="percent" class="admin-skills-desc__name">Node.js
+                        <input type="text" id="percent" class="admin-skills-desc__input">
+                      </label>
+                    </li>
+                    <li class="admin-skills-desc__item">
+                      <label for="percent" class="admin-skills-desc__name">Mango.db
+                        <input type="text" id="percent" class="admin-skills-desc__input">
+                      </label>
+                    </li>
+                  </ul>
+                </li>
+                <li class="admin-skills__item admin-skills__workflow">WorkFlow
+                  <ul class="admin-skills-desc">
+                    <li class="admin-skills-desc__item">
+                      <label for="percent" class="admin-skills-desc__name">Git
+                        <input type="text" id="percent" class="admin-skills-desc__input">
+                      </label>
+                    </li>
+                    <li class="admin-skills-desc__item">
+                      <label for="percent" class="admin-skills-desc__name">Gulp
+                        <input type="text" id="percent" class="admin-skills-desc__input">
+                      </label>
+                    </li>
+                    <li class="admin-skills-desc__item">
+                      <label for="percent" class="admin-skills-desc__name">Bower
+                        <input type="text" id="percent" class="admin-skills-desc__input">
+                      </label>
+                    </li>
+                  </ul>
+                </li>
+              </ul>
+            </form>
+          </div>
+          <button type="submit" class="btn submit-btn admin__btn">
+            Сохранить
+          </button>
+        </div>
+      </section>
+    </div>
+  </div>
+  <script type="text/javascript" src="../js/bundle.js"></script>
+</body>
+
+</html>

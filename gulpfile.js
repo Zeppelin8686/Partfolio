@@ -15,6 +15,7 @@ const cheerio = require('gulp-cheerio');
 const replace = require('gulp-replace');
 //webpack///////////////////////////
 const gulpWebpack = require('gulp-webpack');
+const uglifyjsWebpack = require('uglifyjs-webpack-plugin');
 const webpack = require('webpack');
 const webpackConfig = require('./webpack.config.js');
 //options///////////////////////////
@@ -47,11 +48,14 @@ gulp.task('sass', function() {
 
 	gulp.task('css', function() {
      let plugins = [
-        pixelstorem()
+        pixelstorem({
+					exclude: [],
+					mediaQueries: false
+				})
     ];      
- return gulp.src('dist/css/main.min.css')
-.pipe(postcss(plugins))
-.pipe(gulp.dest('dist/css'));
+		return gulp.src('dist/css/main.min.css')
+		.pipe(postcss(plugins))
+		.pipe(gulp.dest('dist/css'));
 });
 
 	gulp.task('pug', function(){
@@ -62,8 +66,8 @@ gulp.task('sass', function() {
 
 //watcher/////////////////////////////////
 gulp.task('watch', function() {
-	gulp.watch('app/scss/**/*.scss', gulp.series('sass'));
-	gulp.watch('app/*.html', gulp.series('templates'));
+	gulp.watch('app/scss/**/*.scss', gulp.series('sass', 'css'));
+	gulp.watch('app/**/*.html', gulp.series('templates'));
 	gulp.watch('app/css/*.css', gulp.series('concat-css'));
 	gulp.watch('app/js/**/*.js', gulp.series('webpack'));
 	gulp.watch(['app/icons/*.*', 'app/img/*.*'], gulp.series('images'));
@@ -84,7 +88,7 @@ gulp.task('concat-css', function() {
 
 //transfer all html files to "dist"/////////////////////////
 gulp.task('templates', function() {
-	return gulp.src('app/*.html')
+	return gulp.src('app/**/*.html')
 	.pipe(gulp.dest('dist'));
 });
 
@@ -96,7 +100,7 @@ gulp.task('images', function() {
 
 //transfer fonts, normalize and onather static files or folders to "dist"////////////
 gulp.task('assets', function() {
-	return gulp.src(['app/fonts/**', 'app/css/normalize.css'], {base: 'app/'})
+	return gulp.src(['app/fonts/**', 'app/css/normalize.css', 'app/js/map.js', 'app/server.php'], {base: 'app/'})
 	.pipe(gulp.dest('dist'))
 });
 
@@ -114,8 +118,22 @@ gulp.task('server', function() {
 
 //webpack//////////////////////////////////////
 gulp.task('webpack', function() {
-	return gulp.src('app/js/*.js')
-	.pipe(gulpWebpack(webpackConfig, webpack))
+	return gulp.src('app/js/index.js')
+	.pipe(gulpWebpack(webpackConfig,
+	// 	{
+	// 	entry: {
+	// 		app: './app/js/index.js'
+	// 	},
+	// 	output: {
+  //     filename: 'bundle.js'
+	// 	},
+  // 	plugins: [
+  //   // new uglifyjsWebpack({
+  //   //   sourceMap: true
+  //   // })
+	// 	]
+	// },
+	webpack))
 	.pipe(gulp.dest('dist/js/'))
 })
 
@@ -123,6 +141,9 @@ gulp.task('webpack', function() {
 gulp.task('default', gulp.series('clean',
 
 gulp.parallel('sass', 'templates', 'assets', 'images', 'webpack'),
+
+'css',
+
 gulp.parallel('watch', 'server')
 ));
 

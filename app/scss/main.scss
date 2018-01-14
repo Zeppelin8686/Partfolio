@@ -1,8 +1,10 @@
 /*breakpoints*/
-$laptop: 1200px;
-$tablet: 768px;
+$laptop: 1280px;
+$tablet: 800px;
+$big-phone: 600px;
 $phone: 480px;
-$s-phone: 320px; 
+$small-phone: 414px; 
+$very-small-phone: 320px;
 
 /*config*/
 @import 'config/mixins';
@@ -15,14 +17,24 @@ $s-phone: 320px;
 @import 'layout/sprite';
 
 /*section*/
+@import 'section/preloader';
 @import 'section/hero';
 @import 'section/hero-overlay';
 @import 'section/login-form';
+@import 'section/flipper';
 @import 'section/header';
 @import 'section/about';
+@import 'section/skills-circles';
 @import 'section/contacts';
 @import 'section/footer';
 @import 'section/my-works';
 @import 'section/feedbacks';
+@import 'section/modal-window';
 @import 'section/callback-form';
 @import 'section/blog';
+
+/*admin*/
+@import 'admin/admin-adjustments';
+@import 'admin/about-tab';
+@import 'admin/works-tab';
+@import 'admin/blog-tab';

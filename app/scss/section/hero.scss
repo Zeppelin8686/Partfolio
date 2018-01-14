@@ -1,13 +1,36 @@
 .hero {
   height: 100vh;
   position: relative;
-  background-image: url('../../img/bg-welcome.jpg');
-  @include bg-cover;
+  overflow: hidden;
+  // background-image: url('../../img/bg-welcome.jpg');
+  // @include bg-cover;
 }
+
+.hero__bg {
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  background-image: url('../../img/sand.jpg');
+  width: 6116px;
+  animation: bg 90s linear infinite;
+}
+
+
+@keyframes bg {
+  from {
+    transform: translateX(0);
+  }
+
+  to {
+    transform: translate(-3056px);
+  }
+}
+
 
 .welcome {
   display: flex;
-  // display: none; 
   flex-direction: column;
   justify-content: space-between;
   align-items: center;
@@ -23,7 +46,6 @@
 
 .login {
   display: flex;
-  display: none;
   flex-direction: column;
   justify-content: center;
   align-items: center;
@@ -33,11 +55,14 @@
   border-radius: 5px;
 }
 
+
+
 .owner {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  width: 100%;
 }
 
 .welcome__owner {
@@ -65,6 +90,7 @@
 }
 
 .owner__desc-name {
+  margin-bottom: 10px;
   font-family: 'roboto';
   font-weight: 500;
   font-style: normal;
@@ -72,10 +98,6 @@
   line-height: 28px;
   color: #fff;
   text-align: center;
-}
-
-.owner__name {
-  margin-bottom: 10px;
 }
 
 .owner__desc-occup {
@@ -128,11 +150,11 @@ display: flex;
     width: 0;
   }
 
-  & .section__btn {
+  &:last-child .section__btn {
     border-bottom-right-radius: 5px;
   }
 
-  & .section__btn {
+  &:first-child .section__btn {
     border-bottom-left-radius: 5px;
   }
 }
@@ -158,6 +180,10 @@ display: flex;
   &:hover {
     background-color: #fff;
     color: $accent;
+  }
+
+  &--active {
+    left: -9999px;
   }
 }
 
@@ -189,8 +215,9 @@ display: flex;
 
 .hero__rights {
   position: absolute;
-  align-self: center;
   bottom: 35px;
+  left: 50%;
+  transform: translateX(-50%);
 
   @include phone {
     bottom: 10px;

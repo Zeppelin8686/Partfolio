@@ -1,0 +1,64 @@
+.preloader {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  visibility: visible;
+  z-index: 15;
+  transition: all .6s;
+
+
+  &.done {
+    opacity: 0;
+    visibility: hidden;
+  }
+}
+
+.preloader__img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.preloader__pic {
+  position: fixed;
+
+  width: 75px;
+  height: 75px;
+
+  & .preloader__pic1 {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    animation: spin 2s infinite linear;
+  }
+
+  & .preloader__pic2 {
+    animation: spin 2.2s infinite linear;
+  }
+
+  & .preloader__pic3 {
+    animation: spin 2.4s infinite linear;
+  }
+}
+
+.preloader__percents {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+@keyframes spin {
+  from {
+    transform: rotate(-360deg);
+  }
+
+  to {
+    transform: rotate(0deg);
+  }
+}

@@ -5,33 +5,44 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="icon" type="img/favicon.ico" href="icons/favicon.ico">
   <link rel="stylesheet" href="css/normalize.css">
   <link rel="stylesheet" href="css/main.min.css">
-  <title>My works</title>
+  <title>Blog</title>
 </head>
 
 <body>
+  <div class="preloader">
+    <img src="img/desert_prel_bg.jpg" alt="" class="preloder__img">
+    <svg class="preloader__pic" xmlns="http://www.w3.org/2000/svg" viewBox="-20 -27 40.043 55.633">
+      <circle class="preloader__pic1" cx="20.021" cy="6" r="6" />
+      <circle class="preloader__pic2" cx="20.021" cy="6" r="4.5" />
+      <circle class="preloader__pic3" cx="20.021" cy="6" r="3" />
+    </svg>
+    <div class="preloader__percents">0%</div>
+  </div>
   <div class="wrapper">
     <div class="maincontant">
       <section class="section hero section_center">
+        <div class="hero__bg"></div>
         <div class="socials hero__socials">
           <ul class="socials__list">
             <li class="socials__item">
-              <a href="https://vk.com" target="_blank" class="socials_link">
+              <a href="https://vk.com/id1254002" target="_blank" class="socials__link">
                 <svg class="svg-vk-dims vk">
                   <use xlink:href="icons/sprite.svg#vk"></use>
                 </svg>
               </a>
             </li>
             <li class="socials__item">
-              <a href="https://github.com/" target="_blank" class="socials_link">
+              <a href="https://github.com/Zeppelin8686" target="_blank" class="socials__link">
                 <svg class="svg-github-dims github">
                   <use xlink:href="icons/sprite.svg#github"></use>
                 </svg>
               </a>
             </li>
             <li class="socials__item">
-              <a href="https://www.linkedin.com/" target="_blank" class="socials_link">
+              <a href="https://www.linkedin.com/in/maxim-borovik-4081ba113/" target="_blank" class="socials__link">
                 <svg class="svg-in-dims linkedin">
                   <use xlink:href="icons/sprite.svg#in"></use>
                 </svg>
@@ -40,22 +51,20 @@
           </ul>
         </div>
         <button href="#" class="hamburger-menu hero__hamburger-menu">
-          <svg class="svg-hamburger-dims">
-            <use xlink:href="icons/sprite.svg#hamburger"></use>
-          </svg>
+          <div class="hamburger-menu__icon"></div>
         </button>
-        <div class="container">
-          <div class="owner hero__owner">
-            <a href="index.html" class="owner__img">
-              <img src="img/ava.jpg" alt="avatar" class="owner__ava">
-            </a>
-            <div class="owner__desc">
-              <svg class="svg-blog_header-dims" viewBox="0 0 302 208" preserveAspectRatio="none">
+        <div class="owner hero__owner">
+          <a href="index.html" class="owner__img">
+            <img src="img/ava.jpg" alt="avatar" class="owner__ava">
+          </a>
+          <div class="owner__desc">
+            <div class="header-title">
+              <svg class="svg-blog_header-dims header-title__bg" viewBox="0 0 302 208" preserveAspectRatio="none">
                 <use xlink:href="icons/sprite.svg#blog_header"></use>
               </svg>
-              <div class="section__title section__title-white">Блог</div>
-              <div class="owner__desc-occup">Статьи, которые я написал</div>
             </div>
+            <div class="section__title section__title-white">Блог</div>
+            <div class="owner__desc-occup">Статьи, которые я написал</div>
           </div>
         </div>
         <button href="#" class="arrow-down hero__arrow-down">
@@ -93,8 +102,8 @@
           <div class="blog__content">
             <aside class="aside blog__aside">
               <ul class="aside__list">
-                <li class="aside__item">
-                  <a href="#" class="aside__link aside__link--active">Самое важное в SASS</a>
+                <li class="aside__item aside__item--active">
+                  <a href="#" class="aside__link ">Самое важное в SASS</a>
                 </li>
                 <li class="aside__item">
                   <a href="#" class="aside__link">Приёмы в вёрстке, без которых не обходится ни один сайт</a>
@@ -175,25 +184,23 @@
             </div>
           </div>
         </div>
-        <footer class="footer blog__footer">
-          <div class="footer__col">
+        <footer class="footer">
+          <div class="footer__col footer__col-left">
             <div class="container footer__container">
               <p class="footer__text">
-                Этот сайт я сделал в рамках обучения в Школе
-                <br> онлайн образования LoftSchool.
+                Этот сайт я сделал в рамках обучения в школе
+                <span class="footer__text-creator">онлайн образования LoftSchool.</span>
               </p>
               <p class="footer__text">
-                © Максим Боровик.
-                <br> Создано с любовью в LoftSchool | 2017
+                <span class="footer__text-creator">© Максим Боровик.</span> Создано с любовью в LoftSchool | 2017
               </p>
             </div>
 
           </div>
-          <div class="line"></div>
-          <div class="footer__col">
+          <div class="footer__col footer__col-mid">
             <div class="container footer__container">
-              <div class="buttons">
-                <ul class="buttons__list">
+              <div class="buttons footer__buttons">
+                <ul class="buttons__list footer__buttons-list">
                   <li class="buttons__item footer__buttons-item">
                     <a href="my-works.html" class="buttons__link footer__buttons-link">
                       Мои работы
@@ -210,7 +217,7 @@
                     </a>
                   </li>
                   <li class="buttons__item footer__buttons-item">
-                    <a href="blog.html" class="buttons__link footer__buttons-link">
+                    <a href="index.html" class="buttons__link footer__buttons-link">
                       Авторизация
                     </a>
                   </li>
@@ -241,18 +248,17 @@
               </ul>
             </div>
           </div>
-          <div class="line"></div>
-          <div class="footer__col">
+          <div class="footer__col footer__col-right">
             <div class="container footer__container">
               <ul class="contacts__list footer__contacts_list">
                 <li class="contacts__item footer__contacts-item">
-                  <span class="contacts__text footer__contscts-text">Zepppelin8686</span>
+                  <a href="skype:Zeppelin8686?userinfo" class="contacts__text footer__contscts-text">Zepppelin8686</a>
                 </li>
                 <li class="contacts__item footer__contacts-item">
-                  <span class="contacts__text footer__contscts-text">Zepppelin8686@gmail.com</span>
+                  <a href="mailto:Zeppelin8686@gmail.com?subject=Mail from Our Site" class="contacts__text footer__contscts-text">Zepppelin8686@gmail.com</a>
                 </li>
                 <li class="contacts__item footer__contacts-item">
-                  <span class="contacts__text footer__contscts-text">+971 56 1395013</span>
+                  <a href="tel:+971561395013" class="contacts__text footer__contscts-text">+971 56 1395013</a>
                 </li>
                 <li class="contacts__item footer__contacts-item">
                   <span class="contacts__text footer__contscts-text">UAE, Dubai</span>
@@ -266,7 +272,7 @@
   </div>
 
   <script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?key=AIzaSyATLwRQw--Xm7FpKfX7s86oIPnzjLkSq1U"></script>
-  <script type="text/javascript" src="js/7f93d39e648bb17e4d5e.js"></script>
+  <script type="text/javascript" src="js/bundle.js"></script>
 </body>
 
 </html>
