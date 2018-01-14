@@ -1,6 +1,7 @@
 .hero {
   height: 100vh;
   position: relative;
+  overflow: hidden;
   // background-image: url('../../img/bg-welcome.jpg');
   // @include bg-cover;
 }

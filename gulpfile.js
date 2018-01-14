@@ -14,7 +14,7 @@ const svgmin = require('gulp-svgmin');
 const cheerio = require('gulp-cheerio');
 const replace = require('gulp-replace');
 //webpack///////////////////////////
-const gulpWebpack = require('webpack-stream');
+const gulpWebpack = require('gulp-webpack');
 const uglifyjsWebpack = require('uglifyjs-webpack-plugin');
 const webpack = require('webpack');
 const webpackConfig = require('./webpack.config.js');
@@ -100,7 +100,7 @@ gulp.task('images', function() {
 
 //transfer fonts, normalize and onather static files or folders to "dist"////////////
 gulp.task('assets', function() {
-	return gulp.src(['app/fonts/**', 'app/css/normalize.css', 'app/js/map.js'], {base: 'app/'})
+	return gulp.src(['app/fonts/**', 'app/css/normalize.css', 'app/js/map.js', 'app/server.php'], {base: 'app/'})
 	.pipe(gulp.dest('dist'))
 });
 
@@ -119,16 +119,20 @@ gulp.task('server', function() {
 //webpack//////////////////////////////////////
 gulp.task('webpack', function() {
 	return gulp.src('app/js/index.js')
-	.pipe(gulpWebpack({
-		output: {
-      filename: 'bundle.js'
-  	},
-  	plugins: [
-    // new uglifyjsWebpack({
-    //   sourceMap: true
-    // })
-		]
-	},
+	.pipe(gulpWebpack(webpackConfig,
+	// 	{
+	// 	entry: {
+	// 		app: './app/js/index.js'
+	// 	},
+	// 	output: {
+  //     filename: 'bundle.js'
+	// 	},
+  // 	plugins: [
+  //   // new uglifyjsWebpack({
+  //   //   sourceMap: true
+  //   // })
+	// 	]
+	// },
 	webpack))
 	.pipe(gulp.dest('dist/js/'))
 })

@@ -8,10 +8,19 @@
   <link rel="icon" type="img/favicon.ico" href="icons/favicon.ico">
   <link rel="stylesheet" href="css/normalize.css">
   <link rel="stylesheet" href="css/main.min.css">
-  <title>My works</title>
+  <title>Blog</title>
 </head>
 
 <body>
+  <div class="preloader">
+    <img src="img/desert_prel_bg.jpg" alt="" class="preloder__img">
+    <svg class="preloader__pic" xmlns="http://www.w3.org/2000/svg" viewBox="-20 -27 40.043 55.633">
+      <circle class="preloader__pic1" cx="20.021" cy="6" r="6" />
+      <circle class="preloader__pic2" cx="20.021" cy="6" r="4.5" />
+      <circle class="preloader__pic3" cx="20.021" cy="6" r="3" />
+    </svg>
+    <div class="preloader__percents">0%</div>
+  </div>
   <div class="wrapper">
     <div class="maincontant">
       <section class="section hero section_center">
@@ -49,9 +58,11 @@
             <img src="img/ava.jpg" alt="avatar" class="owner__ava">
           </a>
           <div class="owner__desc">
-            <svg class="svg-blog_header-dims" viewBox="0 0 302 208" preserveAspectRatio="none">
-              <use xlink:href="icons/sprite.svg#blog_header"></use>
-            </svg>
+            <div class="header-title">
+              <svg class="svg-blog_header-dims header-title__bg" viewBox="0 0 302 208" preserveAspectRatio="none">
+                <use xlink:href="icons/sprite.svg#blog_header"></use>
+              </svg>
+            </div>
             <div class="section__title section__title-white">Блог</div>
             <div class="owner__desc-occup">Статьи, которые я написал</div>
           </div>
@@ -91,8 +102,8 @@
           <div class="blog__content">
             <aside class="aside blog__aside">
               <ul class="aside__list">
-                <li class="aside__item">
-                  <a href="#" class="aside__link aside__link--active">Самое важное в SASS</a>
+                <li class="aside__item aside__item--active">
+                  <a href="#" class="aside__link ">Самое важное в SASS</a>
                 </li>
                 <li class="aside__item">
                   <a href="#" class="aside__link">Приёмы в вёрстке, без которых не обходится ни один сайт</a>
@@ -206,7 +217,7 @@
                     </a>
                   </li>
                   <li class="buttons__item footer__buttons-item">
-                    <a href="blog.html" class="buttons__link footer__buttons-link">
+                    <a href="index.html" class="buttons__link footer__buttons-link">
                       Авторизация
                     </a>
                   </li>
@@ -241,13 +252,13 @@
             <div class="container footer__container">
               <ul class="contacts__list footer__contacts_list">
                 <li class="contacts__item footer__contacts-item">
-                  <span class="contacts__text footer__contscts-text">Zepppelin8686</span>
+                  <a href="skype:Zeppelin8686?userinfo" class="contacts__text footer__contscts-text">Zepppelin8686</a>
                 </li>
                 <li class="contacts__item footer__contacts-item">
-                  <span class="contacts__text footer__contscts-text">Zepppelin8686@gmail.com</span>
+                  <a href="mailto:Zeppelin8686@gmail.com?subject=Mail from Our Site" class="contacts__text footer__contscts-text">Zepppelin8686@gmail.com</a>
                 </li>
                 <li class="contacts__item footer__contacts-item">
-                  <span class="contacts__text footer__contscts-text">+971 56 1395013</span>
+                  <a href="tel:+971561395013" class="contacts__text footer__contscts-text">+971 56 1395013</a>
                 </li>
                 <li class="contacts__item footer__contacts-item">
                   <span class="contacts__text footer__contscts-text">UAE, Dubai</span>

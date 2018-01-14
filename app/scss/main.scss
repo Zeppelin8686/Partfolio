@@ -17,6 +17,7 @@ $very-small-phone: 320px;
 @import 'layout/sprite';
 
 /*section*/
+@import 'section/preloader';
 @import 'section/hero';
 @import 'section/hero-overlay';
 @import 'section/login-form';
@@ -28,6 +29,7 @@ $very-small-phone: 320px;
 @import 'section/footer';
 @import 'section/my-works';
 @import 'section/feedbacks';
+@import 'section/modal-window';
 @import 'section/callback-form';
 @import 'section/blog';
 

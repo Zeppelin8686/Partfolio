@@ -5,9 +5,11 @@ const config = {
   output: {
     filename: 'bundle.js'
   },
-  plugins: [
-    new uglifyjsWebpack({
-      sourceMap: true
-    })
-  ]
+  // plugins: [
+  //   new uglifyjsWebpack({
+  //     sourceMap: true
+  //   })
+  // ]
 };
+
+module.exports = config;

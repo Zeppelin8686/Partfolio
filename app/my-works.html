@@ -12,6 +12,15 @@
 </head>
 
 <body>
+  <div class="preloader">
+    <img src="img/desert_prel_bg.jpg" alt="" class="preloder__img">
+    <svg class="preloader__pic" xmlns="http://www.w3.org/2000/svg" viewBox="-20 -27 40.043 55.633">
+      <circle class="preloader__pic1" cx="20.021" cy="6" r="6" />
+      <circle class="preloader__pic2" cx="20.021" cy="6" r="4.5" />
+      <circle class="preloader__pic3" cx="20.021" cy="6" r="3" />
+    </svg>
+    <div class="preloader__percents">0%</div>
+  </div>
   <div class="wrapper">
     <div class="maincontant">
       <section class="section hero section_center">
@@ -45,7 +54,7 @@
           <div class="hamburger-menu__icon"></div>
         </button>
         <div class="header-title">
-          <svg class="svg-portfolio_header-dims" viewBox="0 0 1175 314" preserveAspectRatio="none">
+          <svg class="svg-portfolio_header-dims header-title__bg" viewBox="0 0 1175 314" preserveAspectRatio="none">
             <use xlink:href="icons/sprite.svg#portfolio_header"></use>
           </svg>
         </div>
@@ -179,32 +188,38 @@
               </div>
             </div>
           </div>
-          <div class="login callback">
+          <div class="callback">
             <h2 class="section__subtitle">Связаться со мной</h2>
-            <form action="" method="post" class="callback-form">
+            <form action="server.php" method="post" class="callback-form">
               <div class="login-form__row">
-                <input class="callback-form__input" name="user-name" id="name" type="name" placeholder="Имя" required>
+                <input class="callback-form__input" name="user-name" id="name" type="text" placeholder="Имя" required>
                 <label class="callback-form__block" for="name">
                 </label>
-                <input class="callback-form__input" name="user-email" id="email" type="email" placeholder="Email" required>
+                <input class="callback-form__input" name="user-email" id="email" type="text" placeholder="Email" required>
                 <label class="callback-form__block" for="email">
                 </label>
                 <textarea class="callback-form__input callback__form-input_textarea" name="message" id="" cols="30" rows="10" placeholder="Ваше сообщение"></textarea>
               </div>
+              <div class="buttons form-buttons_submit">
+                <ul class="buttons__list">
+                  <li class="buttons__item login__buttons-item">
+                    <input type="submit" value="Отправить" class="btn section__btn submit-btn">
+                    </input>
+                  </li>
+                  <li class="buttons__item login__buttons-item">
+                    <input type="reset" value="Очистить" class="btn section__btn submit-btn">
+                    </input>
+                  </li>
+                </ul>
+              </div>
             </form>
-            <div class="buttons">
-              <ul class="buttons__list">
-                <li class="buttons__item login__buttons-item">
-                  <button type="submit" class="btn section__btn submit-btn">
-                    Отправить
-                  </button>
-                </li>
-                <li class="buttons__item login__buttons-item">
-                  <button type="reset" class="btn section__btn submit-btn">
-                    Очистить
-                  </button>
-                </li>
-              </ul>
+            <div class="modal-window modal-window__sent">
+              <span class="modal-window-title">Сообщение отправлено</span>
+              <button type="button" class="btn close-btn">Закрыть</button>
+            </div>
+            <div class="modal-window modal-window__error">
+              <span class="modal-window-title">Что-то пошло не так! support@maxborovik.com</span>
+              <button type="button" class="btn close-btn">Закрыть</button>
             </div>
           </div>
         </div>
@@ -246,7 +261,7 @@
                     </a>
                   </li>
                   <li class="buttons__item footer__buttons-item">
-                    <a href="blog.html" class="buttons__link footer__buttons-link">
+                    <a href="index.html" class="buttons__link footer__buttons-link">
                       Авторизация
                     </a>
                   </li>
@@ -281,13 +296,13 @@
             <div class="container footer__container">
               <ul class="contacts__list footer__contacts_list">
                 <li class="contacts__item footer__contacts-item">
-                  <span class="contacts__text footer__contscts-text">Zepppelin8686</span>
+                  <a href="skype:Zeppelin8686?userinfo" class="contacts__text footer__contscts-text">Zepppelin8686</a>
                 </li>
                 <li class="contacts__item footer__contacts-item">
-                  <span class="contacts__text footer__contscts-text">Zepppelin8686@gmail.com</span>
+                  <a href="mailto:Zeppelin8686@gmail.com?subject=Mail from Our Site" class="contacts__text footer__contscts-text">Zepppelin8686@gmail.com</a>
                 </li>
                 <li class="contacts__item footer__contacts-item">
-                  <span class="contacts__text footer__contscts-text">+971 56 1395013</span>
+                  <a href="tel:+971561395013" class="contacts__text footer__contscts-text">+971 56 1395013</a>
                 </li>
                 <li class="contacts__item footer__contacts-item">
                   <span class="contacts__text footer__contscts-text">UAE, Dubai</span>
@@ -299,7 +314,7 @@
       </section>
     </div>
   </div>
-
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
   <script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?key=AIzaSyATLwRQw--Xm7FpKfX7s86oIPnzjLkSq1U"></script>
   <script type="text/javascript" src="js/bundle.js"></script>
 </body>

@@ -17,6 +17,7 @@
   margin-top: 40px;
   display: flex;
   width: 100%;
+  height: 100%;
 }
 
 .aside {
@@ -30,15 +31,31 @@
 }
 
 .blog__aside {
+  position: relative;
   width: 30%;
 }
 
 .aside__list {
+  position: sticky;
+  top: 20px;
   width: 52%;
 }
 
 .aside__item {
+  position: relative;
   margin-bottom: 37px;
+  padding-right: 17px;
+
+  &--active:after {
+    content: '';
+    position: absolute;
+    display: block;
+    right: 0;
+    top: 0;
+    width: 3px;
+    height: 100%;
+    background-color: $accent;
+  }
 }
 
 .aside__link {
@@ -48,16 +65,16 @@
   text-decoration: none;
   text-align: right;
 
-  &:after {
-    content: '';
-    display: block;
-    width: 3px;
-    margin-left: 17px;
-  }
+  // &:after {
+  //   content: '';
+  //   display: block;
+  //   width: 3px;
+  //   margin-left: 17px;
+  // }
 
-  &--active:after {
-    background-color:$accent;
-  }
+  // &--active:after {
+  //   background-color:$accent;
+  // }
 }
 
 .blog__articles {

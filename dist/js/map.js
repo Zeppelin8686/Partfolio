@@ -192,4 +192,4 @@
       });
     }
 
-    initMap();
+    module.exports = initMap;
